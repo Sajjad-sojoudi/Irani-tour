@@ -16,6 +16,15 @@
         <action
             android:id="@+id/action_iranlogyFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_savedLocationFragment"
+            app:destination="@id/savedLocationFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
     </fragment>
     <fragment
         android:id="@+id/landMarkFragment"
@@ -41,4 +50,19 @@
             android:id="@+id/action_profileFragment_to_landMarkFragment"
             app:destination="@id/landMarkFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/savedLocationFragment"
+        android:name="ir.sajjad.iranitour.SavedLocationFragment"
+        android:label="fragment_saved_location"
+        tools:layout="@layout/fragment_saved_location" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="ir.sajjad.iranitour.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="ir.sajjad.iranitour.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
 </navigation>
