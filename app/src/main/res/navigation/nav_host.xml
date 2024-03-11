@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/iranlogyFragment">
+
+    <fragment
+        android:id="@+id/iranlogyFragment"
+        android:name="ir.sajjad.iranitour.fragments.IranlogyFragment"
+        android:label="fragment_iranlogy"
+        tools:layout="@layout/fragment_iranlogy" >
+        <action
+            android:id="@+id/action_iranlogyFragment_to_landMarkFragment"
+            app:destination="@id/landMarkFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landMarkFragment"
+        android:name="ir.sajjad.iranitour.fragments.LandMarkFragment"
+        android:label="fragment_land_mark"
+        tools:layout="@layout/fragment_land_mark" >
+        <action
+            android:id="@+id/action_landMarkFragment_to_iranlogyFragment"
+            app:destination="@id/iranlogyFragment" />
+        <action
+            android:id="@+id/action_landMarkFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ir.sajjad.iranitour.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_iranlogyFragment"
+            app:destination="@id/iranlogyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_landMarkFragment"
+            app:destination="@id/landMarkFragment" />
+    </fragment>
+</navigation>

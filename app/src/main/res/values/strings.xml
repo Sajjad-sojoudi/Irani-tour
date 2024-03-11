@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Irani Tour</string>
+    <string name="app_shoar" translatable="false">Irani Tour is your good companion :)</string>
+    <string name="saved_locations" translatable="false">Saved locations</string>
+    <string name="about_us" translatable="false">About us</string>
+    <string name="setting" translatable="false">Setting</string>
+    <string name="change_themes" translatable="false">Change Themes</string>
+    <string name="open_drawer" translatable="false">Open Drawer</string>
+    <string name="close_drawer" translatable="false">Close Drawer</string>
+    <string name="iranology" translatable="false">Iranology</string>
+    <string name="land_mark" translatable="false">Land Mark</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="exit" translatable="false">Exit</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ایرانی تور</string>
+    <string name="app_shoar" translatable="false">ایرانی تور یک همراه خوب برای شماست :)</string>
+    <string name="saved_locations" translatable="false">مکان های ذخیره شده</string>
+    <string name="about_us" translatable="false">درباره ما</string>
+    <string name="setting" translatable="false">تنظیمات</string>
+    <string name="change_themes" translatable="false">تغییر تم</string>
+    <string name="open_drawer" translatable="false">باز کردن کشو</string>
+    <string name="close_drawer" translatable="false">بستن کشو</string>
+    <string name="iranology" translatable="false">ایران شناسی</string>
+    <string name="land_mark" translatable="false">جای دیدنی</string>
+    <string name="profile" translatable="false">حساب کاربری</string>
+    <string name="exit" translatable="false">خروج</string>
+
+</resources>
