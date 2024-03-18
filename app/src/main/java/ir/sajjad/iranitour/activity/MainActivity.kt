@@ -39,8 +39,15 @@ class MainActivity : AppCompatActivity() {
                     binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
                 }
                 R.id.menu_setting ->{
+                    findNavController(R.id.fragmentContainerView).navigate(R.id.settingFragment)
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
                 }
-                R.id.menu_about_us ->{}
+                R.id.menu_about_us ->{
+                    findNavController(R.id.fragmentContainerView).navigate(R.id.aboutUsFragment)
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
+                }
+
+                R.id.menu_change_theme ->{}
 
                 R.id.menu_exit ->{
                     finish()

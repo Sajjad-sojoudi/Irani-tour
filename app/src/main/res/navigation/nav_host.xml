@@ -52,17 +52,17 @@
     </fragment>
     <fragment
         android:id="@+id/savedLocationFragment"
-        android:name="ir.sajjad.iranitour.SavedLocationFragment"
+        android:name="ir.sajjad.iranitour.fragments.SavedLocationFragment"
         android:label="fragment_saved_location"
         tools:layout="@layout/fragment_saved_location" />
     <fragment
         android:id="@+id/settingFragment"
-        android:name="ir.sajjad.iranitour.SettingFragment"
+        android:name="ir.sajjad.iranitour.fragments.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/aboutUsFragment"
-        android:name="ir.sajjad.iranitour.AboutUsFragment"
+        android:name="ir.sajjad.iranitour.fragments.AboutUsFragment"
         android:label="fragment_about_us"
         tools:layout="@layout/fragment_about_us" />
 </navigation>

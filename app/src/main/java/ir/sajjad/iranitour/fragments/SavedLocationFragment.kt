@@ -1,4 +1,4 @@
-package ir.sajjad.iranitour
+package ir.sajjad.iranitour.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
