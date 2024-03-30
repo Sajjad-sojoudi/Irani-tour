@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimaryVariant"
+    android:background="?attr/colorPrimaryContainer"
     tools:context=".activity.MainActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -15,14 +15,14 @@
         tools:context=".activity.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:background="?attr/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <androidx.appcompat.widget.Toolbar
+                android:theme="@style/MyToolbar"
                 android:id="@+id/toolBarMain"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:theme="@style/MyToolbar"
-                app:titleTextAppearance="@style/MyToolbar">
+                android:layout_height="56dp">
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
@@ -40,22 +40,18 @@
 
 
 
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            style="@style/fontMain"
             android:id="@+id/bottomNavigationMain"
             app:menu="@menu/menu_bottom_navigation"
-            app:itemIconTint="@color/blue"
             android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-
-
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
     
     <com.google.android.material.navigation.NavigationView
-        android:background="?attr/colorPrimaryVariant"
+        style="@style/fontMain"
         app:menu="@menu/menu_navigation_darwer"
         app:headerLayout="@layout/header_main"
         android:layout_gravity="start"

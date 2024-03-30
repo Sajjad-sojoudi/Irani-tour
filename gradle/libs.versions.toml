@@ -13,6 +13,8 @@ constraintlayout = "2.1.4"
 core = "1.12.0"
 navigationFragmentKtx = "2.7.7"
 roomCompiler = "2.6.1"
+glide = "5.0.0-rc01"
+glideVersion = "1.0.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -29,6 +31,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-core = { group = "androidx.core", name = "core", version.ref = "core" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+transformers-glide = { group = "jp.wasabeef.transformers", name = "glide", version.ref = "glideVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

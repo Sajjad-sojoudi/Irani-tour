@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/iranlogyFragment"
-        android:name="ir.sajjad.iranitour.fragments.IranlogyFragment"
+        android:name="ir.sajjad.iranitour.fragments.bottom.navigation.IranlogyFragment"
         android:label="fragment_iranlogy"
         tools:layout="@layout/fragment_iranlogy" >
         <action
@@ -25,10 +25,40 @@
         <action
             android:id="@+id/action_iranlogyFragment_to_aboutUsFragment"
             app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_eastAzarbaijanFragment"
+            app:destination="@id/eastAzarbaijanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_westAzarbaijanFragment"
+            app:destination="@id/westAzarbaijanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_ardabilFragment"
+            app:destination="@id/ardabilFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_esfahanFragment"
+            app:destination="@id/esfahanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_alborzFragment"
+            app:destination="@id/alborzFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_ilamFragment"
+            app:destination="@id/ilamFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_bushehrFragment"
+            app:destination="@id/bushehrFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_tehranFragment"
+            app:destination="@id/tehranFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_chaharMahalBakhtiariFragment"
+            app:destination="@id/ChaharMahalBakhtiariFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_southKhorasanFragment"
+            app:destination="@id/southKhorasanFragment" />
     </fragment>
     <fragment
         android:id="@+id/landMarkFragment"
-        android:name="ir.sajjad.iranitour.fragments.LandMarkFragment"
+        android:name="ir.sajjad.iranitour.fragments.bottom.navigation.LandMarkFragment"
         android:label="fragment_land_mark"
         tools:layout="@layout/fragment_land_mark" >
         <action
@@ -40,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="ir.sajjad.iranitour.fragments.ProfileFragment"
+        android:name="ir.sajjad.iranitour.fragments.bottom.navigation.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -52,17 +82,72 @@
     </fragment>
     <fragment
         android:id="@+id/savedLocationFragment"
-        android:name="ir.sajjad.iranitour.fragments.SavedLocationFragment"
+        android:name="ir.sajjad.iranitour.fragments.navigation.drawer.SavedLocationFragment"
         android:label="fragment_saved_location"
         tools:layout="@layout/fragment_saved_location" />
     <fragment
         android:id="@+id/settingFragment"
-        android:name="ir.sajjad.iranitour.fragments.SettingFragment"
+        android:name="ir.sajjad.iranitour.fragments.navigation.drawer.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/aboutUsFragment"
-        android:name="ir.sajjad.iranitour.fragments.AboutUsFragment"
+        android:name="ir.sajjad.iranitour.fragments.navigation.drawer.AboutUsFragment"
         android:label="fragment_about_us"
         tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/eastAzarbaijanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.EastAzarbaijanFragment"
+        android:label="fragment_east_azarbaijan"
+        tools:layout="@layout/fragment_east_azarbaijan" />
+    <fragment
+        android:id="@+id/westAzarbaijanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.WestAzarbaijanFragment"
+        android:label="fragment_west_azarbaijan"
+        tools:layout="@layout/fragment_west_azarbaijan" />
+    <fragment
+        android:id="@+id/ardabilFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.ArdabilFragment"
+        android:label="fragment_ardabil"
+        tools:layout="@layout/fragment_ardabil" />
+    <fragment
+        android:id="@+id/esfahanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.EsfahanFragment"
+        android:label="fragment_esfahan"
+        tools:layout="@layout/fragment_esfahan" />
+    <fragment
+        android:id="@+id/alborzFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.AlborzFragment"
+        android:label="fragment_alborz"
+        tools:layout="@layout/fragment_alborz" />
+    <fragment
+        android:id="@+id/ilamFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.IlamFragment"
+        android:label="fragment_ilam"
+        tools:layout="@layout/fragment_ilam" />
+    <fragment
+        android:id="@+id/bushehrFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.BushehrFragment"
+        android:label="fragment_bushehr"
+        tools:layout="@layout/fragment_bushehr" />
+    <fragment
+        android:id="@+id/tehranFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.TehranFragment"
+        android:label="fragment_tehran"
+        tools:layout="@layout/fragment_tehran" />
+    <fragment
+        android:id="@+id/ChaharMahalBakhtiariFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.ChaharMahalBakhtiariFragment"
+        android:label="fragment_chahar_mahal_bakhtiari"
+        tools:layout="@layout/fragment_chahar_mahal_bakhtiari" />
+    <fragment
+        android:id="@+id/southKhorasanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.SouthKhorasanFragment"
+        android:label="fragment_south_khorasan"
+        tools:layout="@layout/fragment_south_khorasan" />
+    <fragment
+        android:id="@+id/khorasanRazaviFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.KhorasanRazaviFragment"
+        android:label="fragment_khorasan_rrazavi"
+        tools:layout="@layout/fragment_khorasan_rrazavi" />
 </navigation>
