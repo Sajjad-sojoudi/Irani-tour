@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:iconTint="?attr/colorOnPrimary"
+        android:icon="@drawable/ic_save"
+        android:id="@+id/menu_save_locations"
+        android:title="@string/saved_locations"/>
+
+    <item
+        android:iconTint="?attr/colorOnPrimary"
+        android:icon="@drawable/ic_darkmode"
+        android:id="@+id/menu_change_theme"
+        android:title="@string/change_themes"
+        app:actionLayout="@layout/switch_item" />
+
+    <item
+        android:iconTint="?attr/colorOnPrimary"
+        android:icon="@drawable/ic_setting"
+        android:id="@+id/menu_setting"
+        android:title="@string/setting"/>
+
+    <item
+        android:iconTint="?attr/colorOnPrimary"
+        android:icon="@drawable/ic_about_us"
+        android:id="@+id/menu_about_us"
+        android:title="@string/about_us"/>
+
+    <item
+        android:iconTint="?attr/colorOnPrimary"
+        android:icon="@drawable/ic_exit"
+        android:id="@+id/menu_exit"
+        android:title="@string/exit"/>
+</menu>
