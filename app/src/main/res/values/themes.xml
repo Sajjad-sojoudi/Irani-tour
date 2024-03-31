@@ -8,6 +8,9 @@
         <item name="colorSecondary">@color/md_theme_secondary</item>
         <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
 
+        <item name="colorOnSecondaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnSurface">@color/md_theme_primaryContainer</item>
+
     </style>
 
     <style name="MyToolbar" parent="Theme.MaterialComponents">
