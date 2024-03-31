@@ -260,6 +260,16 @@ class IranlogyFragment() : Fragment(),ItemEvents {
             resources.getString(R.string.chahar_mahal_bakhtiari) -> "ChaharMahalBakhtiari"
             resources.getString(R.string.south_khorasan) -> "SouthKhorasan"
             resources.getString(R.string.khorasan_razavi) -> "KhorasanRazavi"
+            resources.getString(R.string.north_khorasan) -> "NorthKhorasan"
+            resources.getString(R.string.khozestan) -> "Khozestan"
+            resources.getString(R.string.zanjan) -> "Zanjan"
+            resources.getString(R.string.semnan) -> "Semnan"
+            resources.getString(R.string.sistan_baluchistan) -> "SistanBaluchistan"
+            resources.getString(R.string.fars) -> "Fars"
+            resources.getString(R.string.qazvin) -> "Qazvin"
+            resources.getString(R.string.qom) -> "Qom"
+            resources.getString(R.string.kurdistan) -> "Kurdistan"
+            resources.getString(R.string.kerman) -> "Kerman"
 
             else -> null
         }

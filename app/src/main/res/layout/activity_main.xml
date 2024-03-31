@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    android:id="@+id/drawerLayoutMain"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimaryContainer"
@@ -15,48 +14,48 @@
         tools:context=".activity.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
-            android:background="?attr/colorPrimary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
             <androidx.appcompat.widget.Toolbar
-                android:theme="@style/MyToolbar"
                 android:id="@+id/toolBarMain"
                 android:layout_width="match_parent"
-                android:layout_height="56dp">
+                android:layout_height="56dp"
+                android:theme="@style/MyToolbar">
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
 
 
         <androidx.fragment.app.FragmentContainerView
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             android:id="@+id/fragmentContainerView"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="56dp"
             app:defaultNavHost="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             app:navGraph="@navigation/nav_host" />
 
 
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            style="@style/fontMain"
             android:id="@+id/bottomNavigationMain"
-            app:menu="@menu/menu_bottom_navigation"
-            android:layout_gravity="bottom"
+            style="@style/fontMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/menu_bottom_navigation" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    
+
     <com.google.android.material.navigation.NavigationView
-        style="@style/fontMain"
-        app:menu="@menu/menu_navigation_darwer"
-        app:headerLayout="@layout/header_main"
-        android:layout_gravity="start"
         android:id="@+id/navigationViewMain"
+        style="@style/fontMain"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_main"
+        app:menu="@menu/menu_navigation_darwer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
