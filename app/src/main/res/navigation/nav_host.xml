@@ -88,6 +88,15 @@
         <action
             android:id="@+id/action_iranlogyFragment_to_kermanFragment"
             app:destination="@id/kermanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_kermanshahFragment"
+            app:destination="@id/kermanshahFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_kohgiloyehAndBoyerahmadFragment"
+            app:destination="@id/kohgiloyehAndBoyerahmadFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_golestanFragment2"
+            app:destination="@id/golestanFragment2" />
     </fragment>
     <fragment
         android:id="@+id/landMarkFragment"
@@ -233,4 +242,19 @@
         android:name="ir.sajjad.iranitour.fragments.city.KermanFragment"
         android:label="fragment_kerman"
         tools:layout="@layout/fragment_kerman" />
+    <fragment
+        android:id="@+id/kermanshahFragment"
+        android:name="ir.sajjad.iranitour.KermanshahFragment"
+        android:label="fragment_kermanshah"
+        tools:layout="@layout/fragment_kermanshah" />
+    <fragment
+        android:id="@+id/kohgiloyehAndBoyerahmadFragment"
+        android:name="ir.sajjad.iranitour.KohgiloyehAndBoyerahmadFragment"
+        android:label="fragment_kohgiloyeh_and_boyerahmad"
+        tools:layout="@layout/fragment_kohgiloyeh_and_boyerahmad" />
+    <fragment
+        android:id="@+id/golestanFragment2"
+        android:name="ir.sajjad.iranitour.GolestanFragment"
+        android:label="fragment_golestan"
+        tools:layout="@layout/fragment_golestan" />
 </navigation>

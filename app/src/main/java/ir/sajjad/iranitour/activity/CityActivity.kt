@@ -3,6 +3,8 @@ package ir.sajjad.iranitour.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import ir.sajjad.iranitour.KermanshahFragment
+import ir.sajjad.iranitour.KohgiloyehAndBoyerahmadFragment
 import ir.sajjad.iranitour.fragments.city.FarsFragment
 import ir.sajjad.iranitour.fragments.city.KermanFragment
 import ir.sajjad.iranitour.fragments.city.KurdistanFragment
@@ -147,6 +149,16 @@ class CityActivity : AppCompatActivity() {
                 }
                 "Kerman" -> {
                     val fragment = KermanFragment()
+                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.commit()
+                }
+                "Kermanshah" -> {
+                    val fragment = KermanshahFragment()
+                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.commit()
+                }
+                "KohgiloyehAndBoyerahmad" -> {
+                    val fragment = KohgiloyehAndBoyerahmadFragment()
                     transaction.replace(R.id.frameLayoutTest, fragment)
                     transaction.commit()
                 }

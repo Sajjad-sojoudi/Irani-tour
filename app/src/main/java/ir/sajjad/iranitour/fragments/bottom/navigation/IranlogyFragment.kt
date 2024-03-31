@@ -270,6 +270,8 @@ class IranlogyFragment() : Fragment(),ItemEvents {
             resources.getString(R.string.qom) -> "Qom"
             resources.getString(R.string.kurdistan) -> "Kurdistan"
             resources.getString(R.string.kerman) -> "Kerman"
+            resources.getString(R.string.kermanshah) -> "Kermanshah"
+            resources.getString(R.string.kohgiloyeh_and_boyerahmad) -> "KohgiloyehAndBoyerahmad"
 
             else -> null
         }
