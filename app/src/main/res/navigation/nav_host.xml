@@ -97,6 +97,27 @@
         <action
             android:id="@+id/action_iranlogyFragment_to_golestanFragment2"
             app:destination="@id/golestanFragment2" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_gilanFragment"
+            app:destination="@id/gilanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_lorestanFragment"
+            app:destination="@id/lorestanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_mazandaranFragment"
+            app:destination="@id/mazandaranFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_markaziFragment"
+            app:destination="@id/markaziFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_hormozganFragment"
+            app:destination="@id/hormozganFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_hamedanFragment"
+            app:destination="@id/hamedanFragment" />
+        <action
+            android:id="@+id/action_iranlogyFragment_to_yazdFragment"
+            app:destination="@id/yazdFragment" />
     </fragment>
     <fragment
         android:id="@+id/landMarkFragment"
@@ -257,4 +278,39 @@
         android:name="ir.sajjad.iranitour.GolestanFragment"
         android:label="fragment_golestan"
         tools:layout="@layout/fragment_golestan" />
+    <fragment
+        android:id="@+id/gilanFragment"
+        android:name="ir.sajjad.iranitour.GilanFragment"
+        android:label="fragment_gilan"
+        tools:layout="@layout/fragment_gilan" />
+    <fragment
+        android:id="@+id/lorestanFragment"
+        android:name="ir.sajjad.iranitour.LorestanFragment"
+        android:label="fragment_lorestan"
+        tools:layout="@layout/fragment_lorestan" />
+    <fragment
+        android:id="@+id/mazandaranFragment"
+        android:name="ir.sajjad.iranitour.MazandaranFragment"
+        android:label="fragment_mazandaran"
+        tools:layout="@layout/fragment_mazandaran" />
+    <fragment
+        android:id="@+id/markaziFragment"
+        android:name="ir.sajjad.iranitour.MarkaziFragment"
+        android:label="fragment_markazi"
+        tools:layout="@layout/fragment_markazi" />
+    <fragment
+        android:id="@+id/hormozganFragment"
+        android:name="ir.sajjad.iranitour.HormozganFragment"
+        android:label="fragment_hormozgan"
+        tools:layout="@layout/fragment_hormozgan" />
+    <fragment
+        android:id="@+id/hamedanFragment"
+        android:name="ir.sajjad.iranitour.HamedanFragment"
+        android:label="fragment_hamedan"
+        tools:layout="@layout/fragment_hamedan" />
+    <fragment
+        android:id="@+id/yazdFragment"
+        android:name="ir.sajjad.iranitour.YazdFragment"
+        android:label="fragment_yazd"
+        tools:layout="@layout/fragment_yazd" />
 </navigation>

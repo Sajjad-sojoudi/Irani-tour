@@ -3,8 +3,15 @@ package ir.sajjad.iranitour.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import ir.sajjad.iranitour.GilanFragment
+import ir.sajjad.iranitour.GolestanFragment
+import ir.sajjad.iranitour.HamedanFragment
+import ir.sajjad.iranitour.HormozganFragment
 import ir.sajjad.iranitour.KermanshahFragment
 import ir.sajjad.iranitour.KohgiloyehAndBoyerahmadFragment
+import ir.sajjad.iranitour.LorestanFragment
+import ir.sajjad.iranitour.MarkaziFragment
+import ir.sajjad.iranitour.MazandaranFragment
 import ir.sajjad.iranitour.fragments.city.FarsFragment
 import ir.sajjad.iranitour.fragments.city.KermanFragment
 import ir.sajjad.iranitour.fragments.city.KurdistanFragment
@@ -18,6 +25,7 @@ import ir.sajjad.iranitour.fragments.city.AlborzFragment
 import ir.sajjad.iranitour.fragments.city.ArdabilFragment
 import ir.sajjad.iranitour.fragments.city.EastAzarbaijanFragment
 import ir.sajjad.iranitour.R
+import ir.sajjad.iranitour.YazdFragment
 import ir.sajjad.iranitour.fragments.city.SemnanFragment
 import ir.sajjad.iranitour.fragments.city.SistanBaluchistanFragment
 import ir.sajjad.iranitour.fragments.city.ZanjanFragment
@@ -48,120 +56,130 @@ class CityActivity : AppCompatActivity() {
             val transaction = supportFragmentManager.beginTransaction()
             when (fragmentName) {
                 "EastAzarbaijanFragment" -> {
-                    val fragment = EastAzarbaijanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, EastAzarbaijanFragment())
                     transaction.commit()
                 }
                 "WestAzarbaijanFragment" -> {
-                    val fragment = WestAzarbaijanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, WestAzarbaijanFragment())
                     transaction.commit()
                 }
                 "Ardabil" -> {
-                    val fragment = ArdabilFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, ArdabilFragment())
                     transaction.commit()
                 }
                 "Esfahan" -> {
-                    val fragment = EsfahanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, EsfahanFragment())
                     transaction.commit()
                 }
                 "Alborz" -> {
-                    val fragment = AlborzFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, AlborzFragment())
                     transaction.commit()
                 }
                 "Ilam" -> {
-                    val fragment = IlamFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, IlamFragment())
                     transaction.commit()
                 }
                 "Bushehr" -> {
-                    val fragment = BushehrFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, BushehrFragment())
                     transaction.commit()
                 }
                 "Tehran" -> {
-                    val fragment = TehranFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, TehranFragment())
                     transaction.commit()
                 }
                 "ChaharMahalBakhtiari" -> {
-                    val fragment = ChaharMahalBakhtiariFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, ChaharMahalBakhtiariFragment())
                     transaction.commit()
                 }
                 "SouthKhorasan" -> {
-                    val fragment = SouthKhorasanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, SouthKhorasanFragment())
                     transaction.commit()
                 }
                 "KhorasanRazavi" -> {
-                    val fragment = KhorasanRazaviFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, KhorasanRazaviFragment())
                     transaction.commit()
                 }
                 "NorthKhorasan" -> {
-                    val fragment = NorthKhorasanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, NorthKhorasanFragment())
                     transaction.commit()
                 }
-                "khozestan" -> {
-                    val fragment = KhozestanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                "Khozestan" -> {
+                    transaction.replace(R.id.frameLayoutCity, KhozestanFragment())
                     transaction.commit()
                 }
                 "Zanjan" -> {
-                    val fragment = ZanjanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, ZanjanFragment())
                     transaction.commit()
                 }
                 "Semnan" -> {
-                    val fragment = SemnanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, SemnanFragment())
                     transaction.commit()
                 }
                 "SistanBaluchistan" -> {
-                    val fragment = SistanBaluchistanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, SistanBaluchistanFragment())
                     transaction.commit()
                 }
                 "Fars" -> {
-                    val fragment = FarsFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, FarsFragment())
                     transaction.commit()
                 }
                 "Qazvin" -> {
-                    val fragment = QazvinFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, QazvinFragment())
                     transaction.commit()
                 }
                 "Qom" -> {
-                    val fragment = QomFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, QomFragment())
                     transaction.commit()
                 }
                 "Kurdistan" -> {
-                    val fragment = KurdistanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, KurdistanFragment())
                     transaction.commit()
                 }
                 "Kerman" -> {
-                    val fragment = KermanFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, KermanFragment())
                     transaction.commit()
                 }
                 "Kermanshah" -> {
-                    val fragment = KermanshahFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, KermanshahFragment())
                     transaction.commit()
                 }
                 "KohgiloyehAndBoyerahmad" -> {
-                    val fragment = KohgiloyehAndBoyerahmadFragment()
-                    transaction.replace(R.id.frameLayoutTest, fragment)
+                    transaction.replace(R.id.frameLayoutCity, KohgiloyehAndBoyerahmadFragment())
                     transaction.commit()
                 }
+                "Golestan" -> {
+                    transaction.replace(R.id.frameLayoutCity, GolestanFragment())
+                    transaction.commit()
+                }
+                "Gilan" -> {
+                    transaction.replace(R.id.frameLayoutCity, GilanFragment())
+                    transaction.commit()
+                }
+                "Lorestan" -> {
+                    transaction.replace(R.id.frameLayoutCity, LorestanFragment())
+                    transaction.commit()
+                }
+                "Mazandaran" -> {
+                    transaction.replace(R.id.frameLayoutCity, MazandaranFragment())
+                    transaction.commit()
+                }
+                "Markazi" -> {
+                    transaction.replace(R.id.frameLayoutCity, MarkaziFragment())
+                    transaction.commit()
+                }
+                "Hormozgan" -> {
+                    transaction.replace(R.id.frameLayoutCity, HormozganFragment())
+                    transaction.commit()
+                }
+                "Hamedan" -> {
+                    transaction.replace(R.id.frameLayoutCity, HamedanFragment())
+                    transaction.commit()
+                }
+                "Yazd" -> {
+                    transaction.replace(R.id.frameLayoutCity, YazdFragment())
+                    transaction.commit()
+                }
+                else -> null
 
             }
 
