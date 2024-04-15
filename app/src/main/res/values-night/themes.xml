@@ -10,7 +10,10 @@
 
         <item name="colorOnSecondaryContainer">@color/md_theme_primaryContainer</item>
         <item name="colorOnSurface">@color/md_theme_primaryContainer</item>
+
+
     </style>
+
 
     <style name="MyToolbar" parent="Theme.MaterialComponents">
         <item name="fontFamily">@font/iran_sans_bold</item>

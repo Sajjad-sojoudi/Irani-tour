@@ -5,8 +5,12 @@ import android.view.LayoutInflater
 import android.view.RoundedCorner
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.facebook.shimmer.Shimmer
+import com.facebook.shimmer.ShimmerDrawable
+import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.data.ItemPost
 import ir.sajjad.iranitour.databinding.ItemIranlogyOstanBinding
 import ir.sajjad.iranitour.interfaces.ItemEvents
@@ -18,9 +22,25 @@ class IranlogyAdapters(private val data : ArrayList<ItemPost>, private val itemE
         fun bindView(itemPost: ItemPost){
             binding.txtName.text = itemPost.txtName
 
+            val shimmer = Shimmer.ColorHighlightBuilder()
+                .setDuration(1500)
+                .setDuration(1500)
+                .setBaseAlpha(0.7f)
+                .setHighlightAlpha(0.6f)
+                .setBaseColor(ContextCompat.getColor(itemView.context, R.color.white)) // رنگ پایه (Base Color)
+                .setHighlightColor(ContextCompat.getColor(itemView.context, R.color.shimmer_highlight)) // رنگ نور (Highlight Color)
+                .setDirection(Shimmer.Direction.LEFT_TO_RIGHT)
+                .setAutoStart(true)
+                .build()
+
+            val shimmerDrawable = ShimmerDrawable().apply {
+                setShimmer(shimmer)
+            }
+
             Glide
                 .with(binding.root)
                 .load(itemPost.imgUrl)
+                .placeholder(shimmerDrawable)
                 .into(binding.imgOstan)
 
             binding.imgAboutUs.setOnClickListener {

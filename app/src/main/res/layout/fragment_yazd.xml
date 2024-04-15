@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YazdFragment">
+    tools:context=".fragments.city.YazdFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

@@ -5,10 +5,30 @@
     android:layout_height="match_parent"
     tools:context=".fragments.city.EsfahanFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/esfahan" />
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/esfahan"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/recycler_esfahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_iranlogy_city"/>
+
+    </LinearLayout>
+
 
 </FrameLayout>

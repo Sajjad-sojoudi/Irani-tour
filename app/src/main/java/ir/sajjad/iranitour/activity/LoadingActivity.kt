@@ -4,24 +4,51 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import ir.sajjad.iranitour.network.NetworkChecker
 import ir.sajjad.iranitour.databinding.ActivityLoadingBinding
 
 class LoadingActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoadingBinding
+    var isVisble = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
-        val splashJson = binding.loading.playAnimation()
+
+        binding.loading.playAnimation()
         binding.loading.repeatCount = 3
 
-        Handler().postDelayed({
-            val mainIntent = Intent(this, MainActivity::class.java)
-            startActivity(mainIntent)
-            finish()
-        }, 3000)
+
+        checkInternetConnection()
+    }
+
+    fun checkInternetConnection() {
+        if (NetworkChecker(this).isInternetConnected) {
+            binding.txtRetry.visibility = View.INVISIBLE
+
+
+            Handler().postDelayed({
+                val mainIntent = Intent(this, MainActivity::class.java)
+                startActivity(mainIntent)
+                finish()
+            }, 3000)
+
+        } else {
+            isVisble = true
+            binding.txtRetry.visibility = View.VISIBLE
+            binding.txtRetry.setOnClickListener {
+                isVisble = false
+                checkInternetConnection()
+
+                binding.loading.playAnimation()
+                binding.loading.repeatCount = 2
+
+            }
+
+        }
     }
 }

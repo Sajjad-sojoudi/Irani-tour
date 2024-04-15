@@ -265,52 +265,52 @@
         tools:layout="@layout/fragment_kerman" />
     <fragment
         android:id="@+id/kermanshahFragment"
-        android:name="ir.sajjad.iranitour.KermanshahFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.KermanshahFragment"
         android:label="fragment_kermanshah"
         tools:layout="@layout/fragment_kermanshah" />
     <fragment
         android:id="@+id/kohgiloyehAndBoyerahmadFragment"
-        android:name="ir.sajjad.iranitour.KohgiloyehAndBoyerahmadFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.KohgiloyehAndBoyerahmadFragment"
         android:label="fragment_kohgiloyeh_and_boyerahmad"
         tools:layout="@layout/fragment_kohgiloyeh_and_boyerahmad" />
     <fragment
         android:id="@+id/golestanFragment2"
-        android:name="ir.sajjad.iranitour.GolestanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.GolestanFragment"
         android:label="fragment_golestan"
         tools:layout="@layout/fragment_golestan" />
     <fragment
         android:id="@+id/gilanFragment"
-        android:name="ir.sajjad.iranitour.GilanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.GilanFragment"
         android:label="fragment_gilan"
         tools:layout="@layout/fragment_gilan" />
     <fragment
         android:id="@+id/lorestanFragment"
-        android:name="ir.sajjad.iranitour.LorestanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.LorestanFragment"
         android:label="fragment_lorestan"
         tools:layout="@layout/fragment_lorestan" />
     <fragment
         android:id="@+id/mazandaranFragment"
-        android:name="ir.sajjad.iranitour.MazandaranFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.MazandaranFragment"
         android:label="fragment_mazandaran"
         tools:layout="@layout/fragment_mazandaran" />
     <fragment
         android:id="@+id/markaziFragment"
-        android:name="ir.sajjad.iranitour.MarkaziFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.MarkaziFragment"
         android:label="fragment_markazi"
         tools:layout="@layout/fragment_markazi" />
     <fragment
         android:id="@+id/hormozganFragment"
-        android:name="ir.sajjad.iranitour.HormozganFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.HormozganFragment"
         android:label="fragment_hormozgan"
         tools:layout="@layout/fragment_hormozgan" />
     <fragment
         android:id="@+id/hamedanFragment"
-        android:name="ir.sajjad.iranitour.HamedanFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.HamedanFragment"
         android:label="fragment_hamedan"
         tools:layout="@layout/fragment_hamedan" />
     <fragment
         android:id="@+id/yazdFragment"
-        android:name="ir.sajjad.iranitour.YazdFragment"
+        android:name="ir.sajjad.iranitour.fragments.city.YazdFragment"
         android:label="fragment_yazd"
         tools:layout="@layout/fragment_yazd" />
 </navigation>

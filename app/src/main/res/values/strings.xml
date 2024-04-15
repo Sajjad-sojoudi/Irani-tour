@@ -12,7 +12,9 @@
     <string name="profile" translatable="false">Profile</string>
     <string name="exit" translatable="false">Exit</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="retry" translatable="false">Retry...</string>
 
+    <!-- Ostan name -->
     <string name="east_azarbaijan" translatable="false">East Azarbaijan</string>
     <string name="west_azarbaijan" translatable="false">West Azarbaijan</string>
     <string name="ardabil" translatable="false">Ardabil</string>
@@ -46,6 +48,7 @@
     <string name="yazd" translatable="false">Yazd</string>
     <string name="entekhab_ostan" translatable="false">Select the desired province</string>
 
+    <!-- Ostan Details -->
     <string name="east_azarbaijan_detail" translatable="false">East Azerbaijan Province is one of the central provinces of Iran, boasting a plethora of tourist, historical, cultural, and industrial attractions. Its capital city, Tabriz, with a population of over one million, stands as one of Iran\'s largest cities and serves as the most important industrial and commercial center in the northwest of Iran. East Azerbaijan Province shares borders with West Azerbaijan Province to the north, Ardabil Province to the east, Zanjan Province to the south, and West Azerbaijan Province again to the west.\nThe province has a diverse climate, with parts being mountainous and cold, while others enjoy a semi-humid and moderate climate. Moreover, East Azerbaijan Province is home to areas with beautiful wetlands, lakes, and waterfalls such as Lake Urmia and Sahand Waterfall, which provide numerous tourist attractions for visitors.\nThe province is also significant in terms of industry and agriculture. Industries such as food processing, textiles, steel, automotive manufacturing, and petrochemicals play vital roles in the province\'s economy. Alongside industry, agriculture is well-developed in this province, with diverse productions of agricultural products including wheat, saffron, apples, and grapes.\nCulturally, East Azerbaijan Province boasts a rich history and culture. Its people speak Azerbaijani Turkish and adhere to their own traditions, music, and local arts. Each year, various festivals, exhibitions, and cultural activities are held in this province, contributing to the promotion of the region\'s culture and art.</string>
     <string name="west_azarbaijan_details" translatable="false">West Azerbaijan Province is one of the western provinces of Iran, covering an area of over 37,497 square kilometers, making it one of the largest provinces in Iran. It shares borders with East Azerbaijan Province to the north, Zanjan Province to the east, Hamedan and Kermanshah Provinces to the south, and Iraq to the west.\nThe capital of West Azerbaijan Province is Urmia, with a population of over 1.7 million, making it one of Iran\'s largest cities. Urmia serves as a melting pot of different cultures and boasts numerous tourist attractions, including Lake Urmia, the Urmia-Tehran highway, and Zarineh Sardasht Waterfall.\nWest Azerbaijan Province is recognized as one of the important agricultural regions of Iran. Its agricultural productions include wheat, barley, apples, walnuts, and grapes. Additionally, processing and food industries have developed in this province, playing a significant role in the regional economy.\nCulturally, West Azerbaijan Province has a rich history and culture. Its people speak Azerbaijani Turkish and cherish their traditions, music, and local arts. Every year, various festivals and cultural activities are held in this province, contributing to the promotion of the region\'s culture and art.</string>
     <string name="ardabil_details" translatable="false">Ardabil Province is one of the northwestern provinces of Iran, covering an area of over 18,031 square kilometers, making it one of the significant provinces in Iran. It shares borders with the Republic of Azerbaijan to the north, Gilan Province to the east, Zanjan Province to the south, and West Azerbaijan Province to the west.\nThe capital of Ardabil Province is Ardabil city, with a population of over 690,000, making it one of the major cities in northwest Iran. The city boasts numerous tourist attractions, including the shrine of Imamzadeh Ismail, the shrine of Imamzadeh Seyyed Ahmad, and Shorabil Waterfall.\nArdabil Province has a diverse climate, with cold winters and moderate summers. Its forests, lakes, and beautiful waterfalls are among the natural attractions that attract many tourists.\nTourism, agriculture, and animal husbandry are among the important economic activities in Ardabil Province. Its agricultural products include wheat, apples, cherries, and cabbage.\nCulturally, Ardabil Province has a rich cultural and historical heritage. Its people speak Azerbaijani Turkish and cherish their traditions, music, and local arts. Additionally, various cultural festivals and events are held in this province every year, contributing to the promotion of the region\'s culture and art</string>
@@ -77,47 +80,90 @@
     <string name="hormozgan_details" translatable="false">Hormozgan Province is one of the southern provinces of Iran, covering an area of over 17,552 square kilometers, making it one of the larger provinces in the country. It borders Fars Province to the north, Kerman Province to the east, the Persian Gulf to the south, and Bushehr Province to the west.\nThe capital of Hormozgan Province is Bandar Abbas city, with a population of over 725,000, making it the largest city and capital of the province. This city has numerous tourist attractions, including the islands of Qeshm and Hormuz, Farahan Castle, and the beautiful beaches of Hormuz Island.\nHormozgan Province has a warm and dry climate, with very hot summers and mild to warm winters. It boasts very beautiful and diverse natural landscapes, including stunning coastlines, tropical islands, and bustling ports.\nThe economy of Hormozgan Province relies mainly on agricultural activities, fisheries, and maritime industries. Additionally, tourism is one of the most important sources of income in this province, attracting many tourists annually.</string>
     <string name="hamedan_details" translatable="false">Hamadan Province is one of the western provinces of Iran, covering an area of over 23,343 square kilometers, making it one of the larger provinces in the country. It borders Zanjan Province to the north, Markazi and Qom Provinces to the east, Lorestan and Chaharmahal and Bakhtiari Provinces to the south, and Kermanshah Province to the west.\nThe capital of Hamadan Province is Hamadan city, with a population of over 735,000, making it the largest city and capital of the province. This city has various tourist attractions, including the Alavi Dome, Toghrul Tower, and hot springs.\nHamadan Province has a semi-arid and cold climate, with hot summers and cold winters. It boasts beautiful and diverse natural landscapes, including mountains, valleys, and hot springs.\nThe economy of Hamadan Province relies mainly on agricultural activities, animal husbandry, and processing industries. Additionally, there are various mines in this province, including coal, iron, and salt mines, which contribute to its economic development.</string>
     <string name="yazd_details" translatable="false">Yazd Province is one of the central provinces of Iran, covering an area of over 67,991 square kilometers, making it one of the larger provinces in the country. It borders Semnan and South Khorasan Provinces to the north, Razavi Khorasan Province to the east, Kerman Province to the south, and Fars Province to the west.\nThe capital of Yazd Province is Yazd city, with a population of over 650,000, making it the largest city and capital of the province. This city has numerous tourist attractions, including the Bagh-e Eram, Dolat Abad Garden, and Chekoh Waterfall.\nYazd Province has a semi-arid and warm climate, with very hot summers and moderate to cold winters. It boasts beautiful and diverse natural landscapes, including deserts, plains, and stunning mountains.\nThe economy of Yazd Province relies mainly on agricultural activities, animal husbandry, and handicrafts. Additionally, tourism is one of the most important sources of income in this province, attracting many tourists annually.</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+    <!-- East Azarbaijan -->
+    <string name="azar_shahr" translatable="false">Azar Shahr</string>
+    <string name="osku" translatable="false">Osko</string>
+    <string name="ahar" translatable="false">Ahar</string>
+    <string name="bostan_abad" translatable="false">Bostan Abad</string>
+    <string name="jolfa" translatable="false">Jolfa</string>
+    <string name="charavimaq" translatable="false">Charavimaq</string>
+    <string name="khoda_afarin" translatable="false">Khoda Afarin</string>
+    <string name="sarab" translatable="false">Sarab</string>
+    <string name="shabestar" translatable="false">Shabestar</string>
+    <string name="ajab_shir" translatable="false">Ajab Shir</string>
+    <string name="kalibar" translatable="false">Kalibar</string>
+    <string name="maragheh" translatable="false">Maragheh</string>
+    <string name="marand" translatable="false">Marand</string>
+    <string name="malekan" translatable="false">Malekan</string>
+    <string name="miyaneh" translatable="false">Miyaneh</string>
+    <string name="varzeqan" translatable="false">Varzeqan</string>
+    <string name="heris" translatable="false">Heris</string>
+    <string name="hashtrud" translatable="false">Hashtrud</string>
+    <string name="hurand" translatable="false">Hurand</string>
+    <string name="tabriz" translatable="false">tabriz</string>
+    <string name="bonab" translatable="false">Bonab</string>
+
+    <!-- West Azarbaijan -->
+    <string name="urmia" translatable="false">Urmia</string>
+    <string name="oshnavieh" translatable="false">Oshnavieh</string>
+    <string name="bokan" translatable="false">Bokan</string>
+    <string name="piranshahr" translatable="false">Piranshahr</string>
+    <string name="takab" translatable="false">Takab</string>
+    <string name="khoy" translatable="false">Khoy</string>
+    <string name="chaldoran" translatable="false">Chaldoran</string>
+    <string name="chaypareh" translatable="false">Chaypareh</string>
+    <string name="shut" translatable="false">Shut</string>
+    <string name="poldasht" translatable="false">Poldasht</string>
+    <string name="sardasht" translatable="false">Sardasht</string>
+    <string name="salmas" translatable="false">Salmas</string>
+    <string name="shahin_dej" translatable="false">Shahin Dej</string>
+    <string name="maku" translatable="false">Maku</string>
+    <string name="mahabad" translatable="false">Mahabad</string>
+    <string name="miandoab" translatable="false">Miandoab</string>
+    <string name="naqadeh" translatable="false">Naqadeh</string>
+    <string name="chaharborj" translatable="false">Chaharborj</string>
+    <string name="baroq" translatable="false">Baroq</string>
+
+
+    <!-- Ardabil -->
+    <string name="aslan_duz" translatable="false">Aslan Duz</string>
+    <string name="ongut" translatable="false">Ongut</string>
+    <string name="bileh_savar" translatable="false">Bileh Savar</string>
+    <string name="parsabad" translatable="false">Parsabad</string>
+    <string name="khalkhal" translatable="false">Khalkhal</string>
+    <string name="sareyn" translatable="false">Sareyn</string>
+    <string name="kowsar" translatable="false">Kowsar</string>
+    <string name="germi" translatable="false">Germi</string>
+    <string name="meshginshahr" translatable="false">Meshginshahr</string>
+    <string name="namin" translatable="false">Namin</string>
+    <string name="nir" translatable="false">Nir</string>
+
+    <!-- Esfahan -->
+    <string name="aran_and_bidgol" translatable="false">Aran And Bidgol</string>
+    <string name="ardestan" translatable="false">Ardestan</string>
+    <string name="borkhar" translatable="false">Borkhar</string>
+    <string name="bueen_and_miyandasht" translatable="false">Bueen And Miyandasht</string>
+    <string name="tiran_and_korun" translatable="false">Tiran And Korun</string>
+    <string name="chadegan" translatable="false">Chadegan</string>
+    <string name="khomeyni_shahr" translatable="false">Khomeyni Shahr</string>
+    <string name="khansar" translatable="false">Khansar</string>
+    <string name="khur_and_biabanak" translatable="false">Khur and Biabanak</string>
+    <string name="semirom" translatable="false">Semirom</string>
+    <string name="shahin_Shahr_and_meymeh" translatable="false">Shahin Shahr and Meymeh</string>
+    <string name="shahreza" translatable="false">Shahreza</string>
+    <string name="dehaqan" translatable="false">Dehaqan</string>
+    <string name="faridan" translatable="false">Faridan</string>
+    <string name="fereydun_shahr" translatable="false">Fereydun Shahr</string>
+    <string name="falavarjan" translatable="false">Falavarjan</string>
+    <string name="kashan" translatable="false">Kashan</string>
+    <string name="golpayegan" translatable="false">Golpayegan</string>
+    <string name="lenjan" translatable="false">Lenjan</string>
+    <string name="mobarakeh" translatable="false">Mobarakeh</string>
+    <string name="naeen" translatable="false">Naeen</string>
+    <string name="najafabad" translatable="false">Najafabad</string>
+    <string name="natanz" translatable="false">Natanz</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="close" translatable="false">Close</string>
 
 </resources>

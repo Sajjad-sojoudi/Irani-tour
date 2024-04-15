@@ -12,6 +12,7 @@ activity = "1.8.0"
 constraintlayout = "2.1.4"
 core = "1.12.0"
 navigationFragmentKtx = "2.7.7"
+neumorphism = "0.3.0"
 roomCompiler = "2.6.1"
 glide = "5.0.0-rc01"
 glideVersion = "1.0.6"
@@ -32,6 +33,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-core = { group = "androidx.core", name = "core", version.ref = "core" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+neumorphism = { module = "com.github.fornewid:neumorphism", version.ref = "neumorphism" }
 transformers-glide = { group = "jp.wasabeef.transformers", name = "glide", version.ref = "glideVersion" }
 
 [plugins]

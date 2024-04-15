@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.activity.CityActivity
+import ir.sajjad.iranitour.activity.GuideActivity
 import ir.sajjad.iranitour.adapters.IranlogyAdapters
 import ir.sajjad.iranitour.data.ItemPost
 import ir.sajjad.iranitour.databinding.FragmentIranlogyBinding
@@ -30,6 +31,15 @@ class IranlogyFragment() : Fragment(),ItemEvents {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val sharedPreferences = requireContext().getSharedPreferences("iraniTour", Context.MODE_PRIVATE)
+        val isFirstRun = sharedPreferences.getBoolean("isFirstRun", true)
+
+        if (isFirstRun) {
+            GuideActivity.start(requireContext())
+            // تنظیم پرچم برای نشان دادن اینکه برنامه قبلاً اجرا شده است
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("isFirstRun", false)
+            editor.apply()
+        }
 
         showAllData()
     }

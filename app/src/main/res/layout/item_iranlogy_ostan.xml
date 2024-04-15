@@ -28,10 +28,10 @@
        <ImageView
            android:layout_gravity="center"
            android:src="@drawable/ic_loading"
-           android:scaleType="fitXY"
+           android:scaleType="center"
            android:id="@+id/img_ostan"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"/>
+           android:layout_width="45dp"
+           android:layout_height="45dp"/>
    </com.google.android.material.card.MaterialCardView>
 
     <TextView

@@ -19,15 +19,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginBottom="50dp"
         android:id="@+id/loading"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_retry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:lottie_autoPlay="true"
         app:lottie_rawRes="@raw/loadingbar" />
+
+
+    <TextView
+        android:layout_marginBottom="85dp"
+        android:id="@+id/txt_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="?attr/colorOnPrimary"
+        android:text="@string/retry"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/ic_retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

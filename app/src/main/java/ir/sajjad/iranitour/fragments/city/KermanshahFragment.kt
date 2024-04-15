@@ -1,12 +1,15 @@
-package ir.sajjad.iranitour
+package ir.sajjad.iranitour.fragments.city
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import ir.sajjad.iranitour.R
 
-class GolestanFragment : Fragment() {
+
+class KermanshahFragment : Fragment() {
+
 
 
     override fun onCreateView(
@@ -14,7 +17,7 @@ class GolestanFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_golestan, container, false)
+        return inflater.inflate(R.layout.fragment_kermanshah, container, false)
     }
 
 }
