@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardViewMain"
+    android:orientation="horizontal"
+    android:background="?attr/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+   <com.google.android.material.card.MaterialCardView
+       app:strokeWidth="2dp"
+       app:strokeColor="@color/md_theme_primaryContainer"
+       app:cardCornerRadius="4dp"
+       android:layout_marginEnd="8dp"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp"
+       android:layout_gravity="end|center"
+       android:layout_width="45dp"
+       android:layout_height="45dp">
+
+       <ImageView
+           android:layout_gravity="center"
+           android:src="@drawable/ic_loading"
+           android:scaleType="center"
+           android:id="@+id/img_city"
+           android:layout_width="45dp"
+           android:layout_height="45dp"/>
+   </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/iranian_sans"
+        android:id="@+id/txt_name_city"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_gravity="start|center_vertical"
+        android:textSize="16sp"
+        android:text="@string/east_azarbaijan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</com.google.android.material.card.MaterialCardView>

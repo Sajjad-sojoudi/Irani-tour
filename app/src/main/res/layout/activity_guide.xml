@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutGuide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GuideActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/img_guide_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="gone"
+        android:id="@+id/btn_close"
+        android:text="@string/close"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/item_btn"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</FrameLayout>
