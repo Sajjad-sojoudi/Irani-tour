@@ -1,5 +1,6 @@
 package ir.sajjad.iranitour.activity
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +38,7 @@ import ir.sajjad.iranitour.databinding.ActivityCityBinding
 import ir.sajjad.iranitour.fragments.city.EsfahanFragment
 import ir.sajjad.iranitour.fragments.city.TehranFragment
 
+const val SEND_CITY_DATA_TO_ACTIVITY_DETAILS = "sendCityData"
 class CityActivity : AppCompatActivity() {
     lateinit var binding : ActivityCityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +49,13 @@ class CityActivity : AppCompatActivity() {
 
         binding.btnHome.setOnClickListener {
             val intentHome = Intent(this, MainActivity::class.java)
-            startActivity(intentHome)
+            val bundleAnimation = ActivityOptions.makeCustomAnimation(
+                this,
+                R.anim.slide_in_right,  // انیمیشن ورودی
+                R.anim.slide_out_left   // انیمیشن خروجی
+            ).toBundle()
+            startActivity(intentHome, bundleAnimation)
+
         }
 
         val fragmentName = intent.getStringExtra("fragmentName")
@@ -135,7 +143,7 @@ class CityActivity : AppCompatActivity() {
                     transaction.replace(R.id.frameLayoutCity, KurdistanFragment())
                     transaction.commit()
                 }
-                "Kerman" -> {
+                "kerman" -> {
                     transaction.replace(R.id.frameLayoutCity, KermanFragment())
                     transaction.commit()
                 }

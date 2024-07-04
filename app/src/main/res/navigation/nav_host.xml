@@ -313,4 +313,14 @@
         android:name="ir.sajjad.iranitour.fragments.city.YazdFragment"
         android:label="fragment_yazd"
         tools:layout="@layout/fragment_yazd" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="ir.sajjad.iranitour.fragments.bottom.navigation.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ir.sajjad.iranitour.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>

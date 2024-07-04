@@ -10,7 +10,7 @@
 
     <ImageView
         android:scaleType="fitXY"
-        android:src="@drawable/img_guide_first"
+        android:src="@drawable/img_guide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

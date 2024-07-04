@@ -1,5 +1,7 @@
 package ir.sajjad.iranitour.activity
 
+import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Bundle
@@ -18,8 +20,11 @@ import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.databinding.ActivityMainBinding
 import java.util.Locale
 
+var isRegistered = false
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolBarMain)
-
-
+        val sharedPreferencesFileName = "data"
+        val sharedPreferences = getSharedPreferences(sharedPreferencesFileName, Context.MODE_PRIVATE)
+        isRegistered = sharedPreferences.getBoolean("isRegistered", false)
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(
             this,
@@ -61,15 +67,14 @@ class MainActivity : AppCompatActivity() {
                     val switch =findViewById<MaterialSwitch>(R.id.change_theme)
                     switch.setOnCheckedChangeListener { _, isChecked ->
                         if (isChecked){
-                            setLocale("en")
+
                         }else{
-                            setLocale("en")
                         }
                     }
                 }
 
                 R.id.menu_exit -> {
-                    finish()
+                   finishAffinity()
                 }
             }
             true
@@ -86,7 +91,14 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.menu_profile -> {
-                    findNavController(R.id.fragmentContainerView).navigate(R.id.profileFragment)
+                    if(!isRegistered){
+                        findNavController(R.id.fragmentContainerView).navigate(R.id.registerFragment)
+                        sharedPreferences.edit().putBoolean("isRegistered",true).apply()
+                        //isRegistered = true
+                    }else{
+                        findNavController(R.id.fragmentContainerView).navigate(R.id.profileFragment)
+                           isRegistered = true
+                    }
                 }
             }
             true
@@ -94,19 +106,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun changeLanguage(view: android.view.View) {
-        // فراخوانی متد تغییر زبان با کلیک روی دکمه
-        setLocale("fa")
-    }
 
-    private fun setLocale(lang: String) {
-        val locale = Locale(lang)
-        Locale.setDefault(locale)
-        val resources: Resources = resources
-        val configuration: Configuration = resources.configuration
-        configuration.setLocale(locale)
-        resources.updateConfiguration(configuration, resources.displayMetrics)
-        recreate()
-    }
+
+
+
 
 }

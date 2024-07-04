@@ -13,6 +13,20 @@
     <string name="exit" translatable="false">Exit</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="retry" translatable="false">Retry...</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="no_internet" translatable="false">No Network Connection</string>
+    <string name="full_name" translatable="false">Full Name</string>
+    <string name="user_name" translatable="false">User Name</string>
+    <string name="gmail" translatable="false">Gmail</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="re_password" translatable="false">Confirm Password</string>
+    <string name="sign_up" translatable="false">Sign Up</string>
+    <string name="error_8_password" translatable="false">Password must be at least 8 characters long</string>
+    <string name="password_not_match" translatable="false">Password does not match</string>
+    <string name="fill_value" translatable="false">Please fill in all the values</string>
+    <string name="enter_password" translatable="false">Please enter password</string>
+
 
     <!-- Ostan name -->
     <string name="east_azarbaijan" translatable="false">East Azarbaijan</string>
@@ -47,6 +61,9 @@
     <string name="hamedan" translatable="false">Hamedan</string>
     <string name="yazd" translatable="false">Yazd</string>
     <string name="entekhab_ostan" translatable="false">Select the desired province</string>
+    <string name="edit" translatable="false">Edit</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="edit_data" translatable="false">Information changed successfully</string>
 
     <!-- Ostan Details -->
     <string name="east_azarbaijan_detail" translatable="false">East Azerbaijan Province is one of the central provinces of Iran, boasting a plethora of tourist, historical, cultural, and industrial attractions. Its capital city, Tabriz, with a population of over one million, stands as one of Iran\'s largest cities and serves as the most important industrial and commercial center in the northwest of Iran. East Azerbaijan Province shares borders with West Azerbaijan Province to the north, Ardabil Province to the east, Zanjan Province to the south, and West Azerbaijan Province again to the west.\nThe province has a diverse climate, with parts being mountainous and cold, while others enjoy a semi-humid and moderate climate. Moreover, East Azerbaijan Province is home to areas with beautiful wetlands, lakes, and waterfalls such as Lake Urmia and Sahand Waterfall, which provide numerous tourist attractions for visitors.\nThe province is also significant in terms of industry and agriculture. Industries such as food processing, textiles, steel, automotive manufacturing, and petrochemicals play vital roles in the province\'s economy. Alongside industry, agriculture is well-developed in this province, with diverse productions of agricultural products including wheat, saffron, apples, and grapes.\nCulturally, East Azerbaijan Province boasts a rich history and culture. Its people speak Azerbaijani Turkish and adhere to their own traditions, music, and local arts. Each year, various festivals, exhibitions, and cultural activities are held in this province, contributing to the promotion of the region\'s culture and art.</string>
@@ -101,7 +118,7 @@
     <string name="heris" translatable="false">Heris</string>
     <string name="hashtrud" translatable="false">Hashtrud</string>
     <string name="hurand" translatable="false">Hurand</string>
-    <string name="tabriz" translatable="false">tabriz</string>
+    <string name="tabriz" translatable="false">Tabriz</string>
     <string name="bonab" translatable="false">Bonab</string>
 
     <!-- West Azarbaijan -->
@@ -163,7 +180,425 @@
     <string name="naeen" translatable="false">Naeen</string>
     <string name="najafabad" translatable="false">Najafabad</string>
     <string name="natanz" translatable="false">Natanz</string>
-    <string name="next" translatable="false">Next</string>
-    <string name="close" translatable="false">Close</string>
+
+    <!-- Alborz -->
+    <string name="eshtehard" translatable="false">Eshtehard</string>
+    <string name="charbagh" translatable="false">Charbagh</string>
+    <string name="savojbolagh" translatable="false">Savojbolagh</string>
+    <string name="taleqan" translatable="false">Taleqan</string>
+    <string name="fardis" translatable="false">Fardis</string>
+    <string name="karaj" translatable="false">Karaj</string>
+    <string name="nazarabad" translatable="false">Nazarabad</string>
+
+
+    <!-- Ilam -->
+    <string name="abdanan" translatable="false">Abdanan</string>
+    <string name="eyvan" translatable="false">Eyvan</string>
+    <string name="badreh" translatable="false">Badreh</string>
+    <string name="chardavol" translatable="false">Chardavol</string>
+    <string name="chovar" translatable="false">Chovar</string>
+    <string name="darreh_shahr" translatable="false">Darreh Shahr</string>
+    <string name="dehloran" translatable="false">Dehloran</string>
+    <string name="sirvan" translatable="false">Sirvan</string>
+    <string name="malekshahi" translatable="false">Malekshahi</string>
+    <string name="mehran" translatable="false">Mehran</string>
+    <string name="holeylan" translatable="false">Holeylan</string>
+
+    <!-- Bushehr -->
+    <string name="tangestan" translatable="false">Tangestan</string>
+    <string name="jam" translatable="false">Jam</string>
+    <string name="dashtestan" translatable="false">Dashtestan</string>
+    <string name="dashti" translatable="false">Dashti</string>
+    <string name="dayyer" translatable="false">Dayyer</string>
+    <string name="deylam" translatable="false">Deylam</string>
+    <string name="asaluyeh" translatable="false">Asaluyeh</string>
+    <string name="kangan" translatable="false">Kangan</string>
+    <string name="ganaveh" translatable="false">Ganaveh</string>
+
+    <!-- Tehran -->
+    <string name="eslamShahr" translatable="false">EslamShahr</string>
+    <string name="baharestan" translatable="false">Baharestan</string>
+    <string name="pakdasht" translatable="false">Pakdasht</string>
+    <string name="pardis" translatable="false">Pardis</string>
+    <string name="pishva" translatable="false">Pishva</string>
+    <string name="damavand" translatable="false">Damavand</string>
+    <string name="robat_karim" translatable="false">Robat Karim</string>
+    <string name="rey" translatable="false">Rey</string>
+    <string name="shemiranat" translatable="false">Shemiranat</string>
+    <string name="shahriar" translatable="false">Shahriar</string>
+    <string name="firuzkuh" translatable="false">Firuzkuh</string>
+    <string name="qods" translatable="false">Qods</string>
+    <string name="qarchak" translatable="false">Qarchak</string>
+    <string name="malard" translatable="false">Malard</string>
+    <string name="varamin" translatable="false">Varamin</string>
+
+    <!-- Chahar Mahal Bakhtiari -->
+    <string name="ardal" translatable="false">Ardal</string>
+    <string name="borujen" translatable="false">Borujen</string>
+    <string name="ben" translatable="false">Ben</string>
+    <string name="khanmirza" translatable="false">Khanmirza</string>
+    <string name="saman" translatable="false">Saman</string>
+    <string name="shahrekord" translatable="false">Shahrekord</string>
+    <string name="farsan" translatable="false">Farsan</string>
+    <string name="farokhshahr" translatable="false">Farokhshahr</string>
+    <string name="falard" translatable="false">Falard</string>
+    <string name="kuhrang" translatable="false">Kuhrang</string>
+    <string name="kiar" translatable="false">Kiar</string>
+    <string name="lordegan" translatable="false">Lordegan</string>
+
+    <!-- South Khorasna -->
+    <string name="boshruyeh" translatable="false">Boshruyeh</string>
+    <string name="birjand" translatable="false">Birjand</string>
+    <string name="khosf" translatable="false">Khosf</string>
+    <string name="darmian" translatable="false">Darmian</string>
+    <string name="zirkuh" translatable="false">Zirkuh</string>
+    <string name="sarayan" translatable="false">Sarayan</string>
+    <string name="sarbisheh" translatable="false">Sarbisheh</string>
+    <string name="tabas" translatable="false">Tabas</string>
+    <string name="ferdows" translatable="false">Ferdows</string>
+    <string name="qaen" translatable="false">Qaen</string>
+    <string name="nehbandan" translatable="false">Nehbandan</string>
+
+    <!-- Khorasan Razavi  -->
+    <string name="bakharz" translatable="false">Bakharz</string>
+    <string name="bajestan" translatable="false">Bajestan</string>
+    <string name="bardaskan" translatable="false">Bardaskan</string>
+    <string name="taybad" translatable="false">Taybad</string>
+    <string name="torbat_e_jam" translatable="false">Torbat-e-Jam</string>
+    <string name="torbat_e_heydariyeh" translatable="false">Torbat-e-Heydariyeh</string>
+    <string name="joghatay" translatable="false">Joghatay</string>
+    <string name="joveyn" translatable="false">Joveyn</string>
+    <string name="chenaran" translatable="false">Chenaran</string>
+    <string name="khalil_abad" translatable="false">Khalil Abad</string>
+    <string name="khaf" translatable="false">Khaf</string>
+    <string name="khoshab" translatable="false">Khoshab</string>
+    <string name="davarzan" translatable="false">Davarzan</string>
+    <string name="dargaz" translatable="false">Dargaz</string>
+    <string name="roshtkhar" translatable="false">Roshtkhar</string>
+    <string name="zaveh" translatable="false">Zaveh</string>
+    <string name="zeberkhan" translatable="false">Zeberkhan</string>
+    <string name="sabzevar" translatable="false">Sabzevar</string>
+    <string name="sarakhs" translatable="false">Sarakhs</string>
+    <string name="sheshtamad" translatable="false">Sheshtamad</string>
+    <string name="salehabad" translatable="false">Salehabad</string>
+    <string name="torghabe_shandiz" translatable="false">Torghabe Shandiz</string>
+    <string name="fariman" translatable="false">Fariman</string>
+    <string name="firuzeh" translatable="false">Firuzeh</string>
+    <string name="quchan" translatable="false">Quchan</string>
+    <string name="kashmar" translatable="false">Kashmar</string>
+    <string name="kalat" translatable="false">Kalat</string>
+    <string name="kuhsorkh" translatable="false">Kuhsorkh</string>
+    <string name="golbahar" translatable="false">Golbahar</string>
+    <string name="gonabad" translatable="false">Gonabad</string>
+    <string name="mashhad" translatable="false">Mashhad</string>
+    <string name="mahvelat" translatable="false">Mahvelat</string>
+    <string name="miyan_jolgeh" translatable="false">Miyan Jolgeh</string>
+    <string name="neyshabur" translatable="false">Neyshabur</string>
+
+    <!-- North Khorasna -->
+    <string name="esfarayen" translatable="false">Esfarayen</string>
+    <string name="bojnurd" translatable="false">Bojnurd</string>
+    <string name="jajarm" translatable="false">Jajarm</string>
+    <string name="raz_and_jargalan" translatable="false">Raz and Jargalan</string>
+    <string name="shirvan" translatable="false">Shirvan</string>
+    <string name="faruj" translatable="false">Faruj</string>
+    <string name="garmeh" translatable="false">Garmeh</string>
+    <string name="maneh_and_samalqan" translatable="false">Maneh and Samalqan</string>
+
+    <!--  Khozestan  -->
+    <string name="abadan" translatable="false">Abadan</string>
+    <string name="omidiyeh" translatable="false">Omidiyeh</string>
+    <string name="andika" translatable="false">Andika</string>
+    <string name="andimeshk" translatable="false">Andimeshk</string>
+    <string name="ahvaz" translatable="false">Ahvaz</string>
+    <string name="izeh" translatable="false">Izeh</string>
+    <string name="baghmalek" translatable="false">Baghmalek</string>
+    <string name="bavi" translatable="false">Bavi</string>
+    <string name="behbahan" translatable="false">Behbahan</string>
+    <string name="khorramshahr" translatable="false">Khorramshahr</string>
+    <string name="dezpart" translatable="false">Dezpart</string>
+    <string name="dezful" translatable="false">Dezful</string>
+    <string name="dasht_e_azadegan" translatable="false">Dasht Azadegan</string>
+    <string name="ramshir" translatable="false">Ramshir</string>
+    <string name="ramhormoz" translatable="false">Ramhormoz</string>
+    <string name="shadegan" translatable="false">Shadegan</string>
+    <string name="shush" translatable="false">Shush</string>
+    <string name="shushtar" translatable="false">Shushtar</string>
+    <string name="gotvand" translatable="false">Gotvand</string>
+    <string name="lally" translatable="false">Lally</string>
+    <string name="mahshahr" translatable="false">Mahshahr</string>
+    <string name="masjed_soleyman" translatable="false">Masjed Soleyman</string>
+    <string name="haftgel" translatable="false">Haftgel</string>
+    <string name="hendijan" translatable="false">Hendijan</string>
+    <string name="hoveyzeh" translatable="false">Hoveyzeh</string>
+
+    <!--  Zanjan  -->
+    <string name="abhar" translatable="false">Abhar</string>
+    <string name="ijrud" translatable="false">Ijrud</string>
+    <string name="khodabandeh" translatable="false">Khodabandeh</string>
+    <string name="khorramdarreh" translatable="false">Khorramdarreh</string>
+    <string name="soltaniyeh" translatable="false">Soltaniyeh</string>
+    <string name="tarom" translatable="false">Tarom</string>
+    <string name="mahneshan" translatable="false">Mahneshan</string>
+
+
+    <!--  Semnan  -->
+    <string name="ardan" translatable="false">Ardan</string>
+    <string name="damghan" translatable="false">Damghan</string>
+    <string name="sorkheh" translatable="false">Sorkheh</string>
+    <string name="shahrood" translatable="false">Shahrood</string>
+    <string name="garmsar" translatable="false">Garmsar</string>
+    <string name="mehdishahr" translatable="false">Mehdishahr</string>
+    <string name="maime" translatable="false">Maime</string>
+
+
+    <!--  sistan Balouchsestan  -->
+    <string name="iranshahr" translatable="false">Iranshahr</string>
+    <string name="bampur" translatable="false">Bampur</string>
+    <string name="taftan" translatable="false">Taftan</string>
+    <string name="chah_bahar" translatable="false">Chah Bahar</string>
+    <string name="khash" translatable="false">Khash</string>
+    <string name="dashtiari" translatable="false">Dashtiari</string>
+    <string name="dalgan" translatable="false">Dalgan</string>
+    <string name="rask" translatable="false">Rask</string>
+    <string name="zabol" translatable="false">Zabol</string>
+    <string name="zahedan" translatable="false">Zahedan</string>
+    <string name="zarabad" translatable="false">Zarabad</string>
+    <string name="zahak" translatable="false">Zahak</string>
+    <string name="sarbaz" translatable="false">Sarbaz</string>
+    <string name="sib_and_suran" translatable="false">Sib and Suran</string>
+    <string name="fanuj" translatable="false">Fanuj</string>
+    <string name="qasreqand" translatable="false">Qasreqand</string>
+    <string name="konarak" translatable="false">Konarak</string>
+    <string name="golshan" translatable="false">Golshan</string>
+    <string name="lashar" translatable="false">Lashar</string>
+    <string name="mehrestan" translatable="false">Mehrestan</string>
+    <string name="mirjaveh" translatable="false">Mirjaveh</string>
+    <string name="nikshahr" translatable="false">Nikshahr</string>
+    <string name="nimruz" translatable="false">Nimruz</string>
+    <string name="hamoun" translatable="false">Hamoun</string>
+    <string name="hirmand" translatable="false">Hirmand</string>
+
+    <!--  Fars  -->
+    <string name="abade" translatable="false">Abade</string>
+    <string name="arsenjan" translatable="false">Arsenjan</string>
+    <string name="estahban" translatable="false">Estahban</string>
+    <string name="eqlid" translatable="false">Eqlid</string>
+    <string name="evaz" translatable="false">Evaz</string>
+    <string name="bakhtegan" translatable="false">Bakhtegan</string>
+    <string name="bavanat" translatable="false">Bavana</string>
+    <string name="beyza" translatable="false">Beyza</string>
+    <string name="pasargad" translatable="false">pasargad</string>
+    <string name="joyom" translatable="false">Joyom</string>
+    <string name="jahrom" translatable="false">Jahrom</string>
+    <string name="kharameh" translatable="false">Kharameh</string>
+    <string name="khorrambid" translatable="false">Khorrambid</string>
+    <string name="khafr" translatable="false">Khafr</string>
+    <string name="darab" translatable="false">Darab</string>
+    <string name="rostam" translatable="false">Rostam</string>
+    <string name="zarqan" translatable="false">Zarqan</string>
+    <string name="zarrin_dasht" translatable="false">Zarrin Dasht</string>
+    <string name="sepidan" translatable="false">Sepidan</string>
+    <string name="sarchehan" translatable="false">Sarchehan</string>
+    <string name="sarvestan" translatable="false">Sarvestan</string>
+    <string name="shiraz" translatable="false">Shiraz</string>
+    <string name="farashband" translatable="false">Farashband</string>
+    <string name="fasa" translatable="false">Fasa</string>
+    <string name="firuzabad" translatable="false">Firuzabad</string>
+    <string name="qir_and_karzin" translatable="false">Qir and Karzin</string>
+    <string name="kazerun" translatable="false">Kazerun</string>
+    <string name="kavar" translatable="false">Kavar</string>
+    <string name="kuhchenar" translatable="false">Kuhchenar</string>
+    <string name="gerash" translatable="false">Gerash</string>
+    <string name="larestan" translatable="false">Larestan</string>
+    <string name="lamerd" translatable="false">Lamerd</string>
+    <string name="marvdasht" translatable="false">Marvdasht</string>
+    <string name="mamasani" translatable="false">Mamasani</string>
+    <string name="mohr" translatable="false">Mohr</string>
+    <string name="neyriz" translatable="false">Nayriz</string>
+
+    <!--  qazvin  -->
+    <string name="abeyk" translatable="false">Abeyk</string>
+    <string name="avaj" translatable="false">Avaj</string>
+    <string name="bueenzahra" translatable="false">Bueenzahra</string>
+    <string name="takestan" translatable="false">Takestan</string>
+
+    <!--  qom  -->
+    <string name="jafariyeh" translatable="false">Jafariyeh</string>
+    <string name="kahak" translatable="false">Kahak</string>
+
+    <!--  kurdestan  -->
+    <string name="baneh" translatable="false">Baneh</string>
+    <string name="bijar" translatable="false">Bijar</string>
+    <string name="dehgolan" translatable="false">Dehgolan</string>
+    <string name="divandarreh" translatable="false">Divandarreh</string>
+    <string name="sarvabad" translatable="false">Sarvabad</string>
+    <string name="qorveh" translatable="false">Qorveh</string>
+    <string name="kamyaran" translatable="false">Kamyaran</string>
+    <string name="marivan" translatable="false">Marivan</string>
+
+    <!--  Kerman  -->
+    <string name="orzueeyeh" translatable="false">Orzueeyeh</string>
+    <string name="anar" translatable="false">Anar</string>
+    <string name="baft" translatable="false">Baft</string>
+    <string name="bardsir" translatable="false">Bardsir</string>
+    <string name="bam" translatable="false">Bam</string>
+    <string name="jaz_murian" translatable="false">Jaz Murian</string>
+    <string name="jiroft" translatable="false">Jiroft</string>
+    <string name="rabor" translatable="false">Rabor</string>
+    <string name="rafsanjan" translatable="false">Rafsanjan</string>
+    <string name="rudbar_jonubi" translatable="false">Rudbar Jonubi</string>
+    <string name="rigan" translatable="false">Rigan</string>
+    <string name="zarand" translatable="false">Zarand</string>
+    <string name="sirjan" translatable="false">Sirjan</string>
+    <string name="shahr_babak" translatable="false">Shahr Babak</string>
+    <string name="anbarabad" translatable="false">Anbarabad</string>
+    <string name="faryab" translatable="false">Faryab</string>
+    <string name="fahraj" translatable="false">Fahraj</string>
+    <string name="qalehganj" translatable="false">Qalehganj</string>
+    <string name="kuhbanan" translatable="false">Kuhbanan</string>
+    <string name="kahnuj" translatable="false">Kahnuj</string>
+    <string name="ganbaki" translatable="false">Gonbaki</string>
+    <string name="manujan" translatable="false">Manujan</string>
+    <string name="narmashir" translatable="false">Narmashir</string>
+
+    <!--  Kermanshah  -->
+    <string name="eslamabad_gharb" translatable="false">Eslamabad Gharb</string>
+    <string name="paveh" translatable="false">Paveh</string>
+    <string name="salas_babajani" translatable="false">Salas Babajani</string>
+    <string name="javanrud" translatable="false">Javanrud</string>
+    <string name="dalahu" translatable="false">Dalahu</string>
+    <string name="ravansar" translatable="false">Ravansar</string>
+    <string name="sarpol_zahab" translatable="false">Sarpol Zahab</string>
+    <string name="sonqor" translatable="false">Sonqor</string>
+    <string name="sahneh" translatable="false">Sahneh</string>
+    <string name="gasr_shirin" translatable="false">Gasr Shirin</string>
+    <string name="kangavar" translatable="false">Kangavar</string>
+    <string name="gilanegharb" translatable="false">Gilanegharb</string>
+    <string name="harsin" translatable="false">Harsin</string>
+
+    <!--  kohgoloyeh and boyorahmad  -->
+    <string name="basht" translatable="false">Basht</string>
+    <string name="boyer_ahmad" translatable="false">Boyer Ahmad</string>
+    <string name="bahmai" translatable="false">Bahmai</string>
+    <string name="choram" translatable="false">Choram</string>
+    <string name="dena" translatable="false">Dena</string>
+    <string name="kohgiluyeh" translatable="false">Kohgiluyeh</string>
+    <string name="gachsaran" translatable="false">Gachsaran</string>
+    <string name="landeh" translatable="false">Landeh</string>
+    <string name="maregoon" translatable="false">Maregoon</string>
+
+    <!--  golestan  -->
+    <string name="azadshahr" translatable="false">Azadshahr</string>
+    <string name="aqqala" translatable="false">Aqqala</string>
+    <string name="bandar_gaz" translatable="false">Bandar Gaz</string>
+    <string name="torkaman" translatable="false">Torkaman</string>
+    <string name="ramiyan" translatable="false">Ramiyan</string>
+    <string name="ali_abad" translatable="false">Ali Abad</string>
+    <string name="kordkuy" translatable="false">Kordkuy</string>
+    <string name="kalaleh" translatable="false">Kalaleh</string>
+    <string name="galikesh" translatable="false">Galikesh</string>
+    <string name="gorgan" translatable="false">Gorgan</string>
+    <string name="gomishan" translatable="false">Gomishan</string>
+    <string name="gonbad_kavus" translatable="false">Gonbad Kavus</string>
+    <string name="marave_tappeh" translatable="false">Maraveh Tappeh</string>
+    <string name="minodasht" translatable="false">Minodasht</string>
+
+    <!--  gilan  -->
+    <string name="astara" translatable="false">Astara</string>
+    <string name="astaneh_ashrafiyeh" translatable="false">Astaneh Ashrafiyeh</string>
+    <string name="amlash" translatable="false">Amlash</string>
+    <string name="bandar_anzali" translatable="false">Bandar Anzali</string>
+    <string name="talesh" translatable="false">Talesh</string>
+    <string name="khomam" translatable="false">Khomam</string>
+    <string name="rasht" translatable="false">Rasht</string>
+    <string name="rezvanshahr" translatable="false">Rezvanshahr</string>
+    <string name="rudbar" translatable="false">Rudbar</string>
+    <string name="rudsar" translatable="false">Rudsar</string>
+    <string name="siahkal" translatable="false">Siahkal</string>
+    <string name="shaft" translatable="false">Shaft</string>
+    <string name="someh_sara" translatable="false">Someh Sara</string>
+    <string name="fuman" translatable="false">Fuman</string>
+    <string name="lahijan" translatable="false">Lahijan</string>
+    <string name="langarud" translatable="false">Langarud</string>
+    <string name="masal" translatable="false">Masal</string>
+
+    <!--  lorestan  -->
+    <string name="azna" translatable="false">Azna</string>
+    <string name="aligudarz" translatable="false">Aligudarz</string>
+    <string name="borujerd" translatable="false">Borujerd</string>
+    <string name="poldokhtar" translatable="false">Poldokhtar</string>
+    <string name="chegani" translatable="false">Chegani</string>
+    <string name="khorram_abad" translatable="false">Khorram Abad</string>
+    <string name="delfan" translatable="false">Delfan</string>
+    <string name="dorud" translatable="false">Dorud</string>
+    <string name="rumeshkan" translatable="false">Rumeshkan</string>
+    <string name="selseleh" translatable="false">Selseleh</string>
+    <string name="kuhdasht" translatable="false">Kuhdasht</string>
+
+    <!--  mazandaran  -->
+    <string name="amol" translatable="false">Amol</string>
+    <string name="babol" translatable="false">Babol</string>
+    <string name="babolsar" translatable="false">Babolsar</string>
+    <string name="behshahr" translatable="false">Behshahr</string>
+    <string name="tonekabon" translatable="false">Tonekabon</string>
+    <string name="juybar" translatable="false">Juybar</string>
+    <string name="chalus" translatable="false">Chalus</string>
+    <string name="ramsar" translatable="false">Ramsar</string>
+    <string name="sari" translatable="false">Sari</string>
+    <string name="savad_kuh" translatable="false">Savad Kuh</string>
+    <string name="north_savad_kuh" translatable="false">North Savad Kuh</string>
+    <string name="simurgh" translatable="false">Simurgh</string>
+    <string name="abbasabad" translatable="false">Abbasabad</string>
+    <string name="fereydunkenar" translatable="false">Fereydunkenar</string>
+    <string name="qaem_shahr" translatable="false">Qaem Shahr</string>
+    <string name="kelardasht" translatable="false">Kelardasht</string>
+    <string name="galugah" translatable="false">Galugah</string>
+    <string name="mahmudabad" translatable="false">Mahmudabad</string>
+    <string name="miandorud" translatable="false">Miandorud</string>
+    <string name="neka" translatable="false">Neka</string>
+    <string name="nour" translatable="false">Nour</string>
+    <string name="nowshahr" translatable="false">Nowshahr</string>
+
+    <!--  markazi  -->
+    <string name="ashtiyan" translatable="false">Ashtiyan</string>
+    <string name="arak" translatable="false">Arak</string>
+    <string name="tafresh" translatable="false">Tafresh</string>
+    <string name="khomeyn" translatable="false">Khomeyn</string>
+    <string name="khondab" translatable="false">Khondab</string>
+    <string name="delijan" translatable="false">Delijan</string>
+    <string name="zarandieh" translatable="false">Zarandieh</string>
+    <string name="saveh" translatable="false">Saveh</string>
+    <string name="shazand" translatable="false">Shazand</string>
+    <string name="farahan" translatable="false">Farahan</string>
+    <string name="komijan" translatable="false">Komijan</string>
+    <string name="mahallat" translatable="false">Mahallat</string>
+
+    <!--  hormozgan  -->
+    <string name="abu_musa" translatable="false">Abu Musa</string>
+    <string name="bastak" translatable="false">Bastak</string>
+    <string name="bashagard" translatable="false">Bashagard</string>
+    <string name="bandar_lngeh" translatable="false">Bandar Lengeh</string>
+    <string name="bandar_abbas" translatable="false">Bandar Abbas</string>
+    <string name="parsiyan" translatable="false">Parsiyan</string>
+    <string name="jask" translatable="false">Jask</string>
+    <string name="hajiabad" translatable="false">Hajiabad</string>
+    <string name="khamir" translatable="false">Khamir</string>
+    <string name="rudan" translatable="false">Rudan</string>
+    <string name="sirik" translatable="false">Sirik</string>
+    <string name="qeshm" translatable="false">Qeshm</string>
+    <string name="minab" translatable="false">Minab</string>
+
+    <!--  hamedan  -->
+    <string name="asadabad" translatable="false">Asadabad</string>
+    <string name="bahar" translatable="false">Bahar</string>
+    <string name="tuyserkan" translatable="false">Tuyserkan</string>
+    <string name="darjazin" translatable="false">Darjazin</string>
+    <string name="razan" translatable="false">Razan</string>
+    <string name="famenin" translatable="false">Famenin</string>
+    <string name="kabudarahang" translatable="false">Kabudarahang</string>
+    <string name="malayer" translatable="false">Malayer</string>
+    <string name="nahavand" translatable="false">Nahavand</string>
+
 
 </resources>

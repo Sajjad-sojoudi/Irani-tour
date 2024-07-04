@@ -1,5 +1,6 @@
 package ir.sajjad.iranitour.fragments.bottom.navigation
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -7,14 +8,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
+import android.view.animation.LayoutAnimationController
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.facebook.shimmer.Shimmer
+import com.facebook.shimmer.ShimmerDrawable
 import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.activity.CityActivity
 import ir.sajjad.iranitour.activity.GuideActivity
 import ir.sajjad.iranitour.adapters.IranlogyAdapters
 import ir.sajjad.iranitour.data.ItemPost
 import ir.sajjad.iranitour.databinding.FragmentIranlogyBinding
+import ir.sajjad.iranitour.databinding.ItemImageShowBinding
 import ir.sajjad.iranitour.fragments.details.DetailsOstanFragment
 import ir.sajjad.iranitour.interfaces.ItemEvents
 
@@ -238,6 +246,10 @@ class IranlogyFragment() : Fragment(),ItemEvents {
         val myAdapter = IranlogyAdapters (data,this)
         binding.recyclerIranlogy.layoutManager = LinearLayoutManager(context,RecyclerView.VERTICAL,false)
         binding.recyclerIranlogy.adapter = myAdapter
+        val animation = AnimationUtils.loadAnimation(context, R.anim.item_enter_anim)
+        val controller = LayoutAnimationController(animation)
+        binding.recyclerIranlogy.layoutAnimation = controller
+
         binding.recyclerIranlogy.setHasFixedSize(true)
         binding.recyclerIranlogy.setItemViewCacheSize(30)
 
@@ -279,7 +291,7 @@ class IranlogyFragment() : Fragment(),ItemEvents {
             resources.getString(R.string.qazvin) -> "Qazvin"
             resources.getString(R.string.qom) -> "Qom"
             resources.getString(R.string.kurdistan) -> "Kurdistan"
-            resources.getString(R.string.kerman) -> "Kerman"
+            resources.getString(R.string.kerman) -> "kerman"
             resources.getString(R.string.kermanshah) -> "Kermanshah"
             resources.getString(R.string.kohgiloyeh_and_boyerahmad) -> "KohgiloyehAndBoyerahmad"
             resources.getString(R.string.golestan) -> "Golestan"
@@ -301,4 +313,34 @@ class IranlogyFragment() : Fragment(),ItemEvents {
 
 
     }
+
+    override fun onImageLongClicked(itemPost: ItemPost) {
+        val dialog = AlertDialog.Builder(context).create()
+        val dialogImageShow = ItemImageShowBinding.inflate(layoutInflater)
+        dialog.setView(dialogImageShow.root)
+        dialog.show()
+
+        val shimmer = Shimmer.ColorHighlightBuilder()
+            .setDuration(1500)
+            .setDuration(1500)
+            .setBaseAlpha(0.7f)
+            .setHighlightAlpha(0.6f)
+            .setBaseColor(ContextCompat.getColor(requireContext(), R.color.white)) // رنگ پایه (Base Color)
+            .setHighlightColor(ContextCompat.getColor(requireContext(), R.color.shimmer_highlight)) // رنگ نور (Highlight Color)
+            .setDirection(Shimmer.Direction.LEFT_TO_RIGHT)
+            .setAutoStart(true)
+            .build()
+
+
+        val shimmerDrawable = ShimmerDrawable().apply {
+            setShimmer(shimmer)
+        }
+
+        Glide
+            .with(dialogImageShow.root)
+            .load(itemPost.imgUrl)
+            .placeholder(shimmerDrawable)
+            .into(dialogImageShow.imageShow)
+    }
+
 }

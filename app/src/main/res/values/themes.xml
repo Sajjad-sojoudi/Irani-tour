@@ -11,18 +11,32 @@
         <item name="colorOnSecondaryContainer">@color/md_theme_primaryContainer</item>
         <item name="colorOnSurface">@color/md_theme_primaryContainer</item>
 
+        <item name="colorSurface">@color/white</item>
+
 
 
     </style>
 
     <style name="MyToolbar" parent="Theme.MaterialComponents">
-        <item name="fontFamily">@font/iran_sans_bold</item>
+        <item name="fontFamily">@font/cooljazz</item>
         <item name="android:textSize">20sp</item>
+
+        <item name="colorPrimary">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimaryContainer">#FFFFFF</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+
+        <item name="colorOnSecondaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnSurface">@color/md_theme_primaryContainer</item>
+
 
     </style>
 
     <style name="fontMain" parent="Theme.MaterialComponents">
-        <item name="fontFamily">@font/iranian_sans</item>
+        <item name="fontFamily">@font/cooljazz</item>
+        <item name="android:textSize">20sp</item>
     </style>
     <!-- Base application theme. -->
     <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
@@ -30,6 +44,16 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="App_Theme" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimaryContainer">#FFFFFF</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
 
+        <item name="colorOnSecondaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnSurface">@color/md_theme_primaryContainer</item>
+    </style>
 
 </resources>

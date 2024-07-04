@@ -3,6 +3,7 @@ package ir.sajjad.iranitour.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -11,8 +12,9 @@ import com.facebook.shimmer.ShimmerDrawable
 import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.data.ItemPostCity
 import ir.sajjad.iranitour.databinding.ItemIranlogyCityBinding
+import ir.sajjad.iranitour.interfaces.ItemCityEvent
 
-class CityAdapters(private val data: ArrayList<ItemPostCity>) :
+class CityAdapters(private val data: ArrayList<ItemPostCity>, private val itemCityEvent: ItemCityEvent) :
     RecyclerView.Adapter<CityAdapters.CityViewHolder>() {
     lateinit var binding: ItemIranlogyCityBinding
 
@@ -42,6 +44,15 @@ class CityAdapters(private val data: ArrayList<ItemPostCity>) :
                 .load(itemPostCity.imgCity)
                 .placeholder(shimmerDrawable)
                 .into(binding.imgCity)
+
+            binding.cardViewMain.setOnClickListener {
+                itemCityEvent.onItemClicked(itemPostCity)
+            }
+
+            binding.imgCity.setOnLongClickListener {
+                itemCityEvent.onImageLongCLiked(itemPostCity)
+                true
+            }
         }
     }
 
@@ -59,6 +70,8 @@ class CityAdapters(private val data: ArrayList<ItemPostCity>) :
     override fun onBindViewHolder(holder: CityViewHolder, position: Int) {
         holder.setIsRecyclable(false)
         holder.bindViews(data[position])
+        val animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.item_enter_anim)
+        holder.itemView.startAnimation(animation)
 
     }
 }

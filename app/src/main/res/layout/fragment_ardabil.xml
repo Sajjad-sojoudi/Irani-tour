@@ -7,27 +7,28 @@
     tools:context=".fragments.city.ArdabilFragment">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
-                <TextView
-                    android:layout_marginTop="16dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/west_azarbaijan"
-                    android:textColor="?attr/colorOnPrimary"
-                    android:textSize="20sp" />
+        <TextView
+            android:fontFamily="@font/shabnam_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/west_azarbaijan"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="10dp"
             android:id="@+id/recycler_ardabil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/item_iranlogy_city"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            tools:listitem="@layout/item_iranlogy_city" />
 
     </LinearLayout>
 

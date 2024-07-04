@@ -152,7 +152,10 @@
     <color name="colorOnColorPrimaryVariant_highContrast">#FFFFFF</color>
     <color name="colorColorPrimaryVariantContainer_highContrast">#414343</color>
     <color name="colorOnColorPrimaryVariantContainer_highContrast">#FFFFFF</color>
-
     <color name="white">#ffffff</color>
     <color name="shimmer_highlight">#949393</color>
+    <color name="blue">#32B5FF</color>
+    <color name="red">#BF360C</color>
+    <color name="gray_line">#000000</color>
+
 </resources>

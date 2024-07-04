@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.RoundedCorner
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -50,6 +51,11 @@ class IranlogyAdapters(private val data : ArrayList<ItemPost>, private val itemE
             binding.cardViewMain.setOnClickListener {
                 itemEvents.onItemClicked(itemPost)
             }
+
+            binding.imgOstan.setOnLongClickListener {
+                itemEvents.onImageLongClicked(itemPost)
+                true
+            }
         }
     }
 
@@ -64,5 +70,7 @@ class IranlogyAdapters(private val data : ArrayList<ItemPost>, private val itemE
 
     override fun onBindViewHolder(holder: IranlogyViewHolder, position: Int) {
         holder.bindView(data[position])
+        val animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.item_enter_anim)
+        holder.itemView.startAnimation(animation)
     }
 }

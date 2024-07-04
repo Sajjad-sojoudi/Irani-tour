@@ -22,9 +22,6 @@ class GuideActivity : AppCompatActivity() {
         binding = ActivityGuideBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // اینجا متن راهنما را می‌توانید به تناسب برنامه خود تغییر دهید
-        val guideText = "در اینجا دستورالعمل‌های مربوط به برنامه خواهد آمد..."
-
         Handler(Looper.getMainLooper()).postDelayed({
             val fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
             binding.btnClose.startAnimation(fadeInAnimation)

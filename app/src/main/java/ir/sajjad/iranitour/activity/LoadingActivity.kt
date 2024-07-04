@@ -5,7 +5,9 @@ import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.network.NetworkChecker
 import ir.sajjad.iranitour.databinding.ActivityLoadingBinding
 
@@ -38,6 +40,7 @@ class LoadingActivity : AppCompatActivity() {
             }, 3000)
 
         } else {
+            Toast.makeText(this, resources.getString(R.string.no_internet), Toast.LENGTH_SHORT).show()
             isVisble = true
             binding.txtRetry.visibility = View.VISIBLE
             binding.txtRetry.setOnClickListener {

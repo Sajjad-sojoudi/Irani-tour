@@ -35,7 +35,7 @@
    </com.google.android.material.card.MaterialCardView>
 
     <TextView
-        android:fontFamily="@font/iranian_sans"
+        android:fontFamily="@font/shabnam_medium"
         android:id="@+id/txt_name"
         android:textColor="?attr/colorOnPrimary"
         android:layout_gravity="center"
@@ -52,7 +52,7 @@
         android:layout_margin="8dp"
         android:layout_gravity="start|center"
         android:src="@drawable/ic_about_us"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
 
 </com.google.android.material.card.MaterialCardView>

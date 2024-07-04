@@ -1,5 +1,6 @@
 [versions]
-agp = "8.0.0"
+agp = "8.1.1"
+deHdodenhofCircleimageview3 = "3.1.0"
 kotlin = "1.9.0"
 coreKtx = "1.10.1"
 junit = "4.13.2"
@@ -16,6 +17,8 @@ neumorphism = "0.3.0"
 roomCompiler = "2.6.1"
 glide = "5.0.0-rc01"
 glideVersion = "1.0.6"
+shimmer = "0.5.0"
+sparkbutton = "1.0.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -23,6 +26,7 @@ androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fr
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomCompiler" }
+de-hdodenhof-circleimageview4 = { module = "de.hdodenhof:circleimageview", version.ref = "deHdodenhofCircleimageview3" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -34,6 +38,8 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-core = { group = "androidx.core", name = "core", version.ref = "core" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 neumorphism = { module = "com.github.fornewid:neumorphism", version.ref = "neumorphism" }
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+sparkbutton = { module = "com.github.varunest:sparkbutton", version.ref = "sparkbutton" }
 transformers-glide = { group = "jp.wasabeef.transformers", name = "glide", version.ref = "glideVersion" }
 
 [plugins]

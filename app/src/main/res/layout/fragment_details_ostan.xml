@@ -67,7 +67,7 @@
 
 
             <TextView
-                android:fontFamily="@font/iran_sans_bold"
+                android:fontFamily="@font/shabnam_medium"
                 android:textStyle="bold"
                 android:id="@+id/txt_name_details"
                 android:layout_width="match_parent"
@@ -88,8 +88,10 @@
 
 
                 <TextView
+                    android:textColorHighlight="@color/blue"
+                    android:textIsSelectable="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/iranian_sans"
+                    android:fontFamily="@font/shabnam_medium"
                     android:gravity="center_horizontal|start"
                     android:lineHeight="30dp"
                     android:id="@+id/txt_details"

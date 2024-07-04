@@ -5,10 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".fragments.city.SouthKhorasanFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/south_khorasan" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:fontFamily="@font/shabnam_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/south_khorasan"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_south_khorasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            tools:listitem="@layout/item_iranlogy_city" />
+
+    </LinearLayout>
+
 
 </FrameLayout>

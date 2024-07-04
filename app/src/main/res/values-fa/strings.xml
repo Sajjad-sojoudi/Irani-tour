@@ -13,6 +13,20 @@
     <string name="profile" translatable="false">حساب کاربری</string>
     <string name="exit" translatable="false">خروج</string>
     <string name="retry" translatable="false">تلاش مجدد...</string>
+    <string name="next">بعدی</string>
+    <string name="close">بستن</string>
+    <string name="no_internet">اینترنت شما متصل نیست</string>
+    <string name="full_name">نام و نام خانوادگی</string>
+    <string name="user_name">نام کاربری</string>
+    <string name="gmail">جمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="re_password">تکرار رمز عبور</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="error_8_password">گذرواژه باید حداقل 8 کاراکتر باشد</string>
+    <string name="password_not_match">رمز مطابقت ندارد</string>
+    <string name="fill_value">لطفا همه مقادیر رو پر کنید</string>
+    <string name="enter_password">لطفا رمز عبور را وارد کنید</string>
+
 
     <!-- اسم استان -->
     <string name="east_azarbaijan" translatable="false">اذربایجان شرقی</string>
@@ -47,6 +61,9 @@
     <string name="hamedan" translatable="false">همدان</string>
     <string name="yazd" translatable="false">یزد</string>
     <string name="entekhab_ostan" translatable="false">استان مورد نظرتان را انتخاب کنید</string>
+    <string name="edit" translatable="false">ویرایش</string>
+    <string name="cancel" translatable="false">لغو</string>
+    <string name="edit_data" translatable="false">اطلاعات با موفقیت تغییر یافت</string>
 
     <!-- توضیحات استان -->
     <string name="east_azarbaijan_detail">" استان آذربایجان شرقی یکی از استان‌های مرکزی ایران است و دارای جاذبه‌های گردشگری، تاریخی، فرهنگی و صنعتی بسیاری است. مرکز این استان شهر تبریز است که با جمعیت بیش از یک میلیون نفر، یکی از بزرگترین شهرهای ایران است و مهمترین مرکز صنعتی و تجاری منطقه شمال غربی ایران به شمار می‌آید. استان آذربایجان شرقی از شمال به استان آذربایجان غربی، از شرق به استان اردبیل، از جنوب به استان زنجان و از غرب به استان زنجان محدود می‌شود.\nاین استان دارای آب و هوایی متغیر است، از طرفی بخشی از استان کوهستانی و سردسیر است و از طرف دیگر بخشی دیگر دارای آب و هوای نیمه مرطوب و معتدل است. به علاوه، استان آذربایجان شرقی دارای مناطقی با تالاب‌ها، دریاچه‌ها، و آبشارهای زیبا مانند دریاچه ارومیه و آبشار سهلقان است که جاذبه‌های گردشگری بسیاری را برای بازدیدکنندگان فراهم می‌کنند.\nدر زمینه‌های صنعت و کشاورزی نیز استان آذربایجان شرقی مهم است. صنایع غذایی، نساجی، فولاد، خودروسازی و پتروشیمی از جمله صنایع مهم این استان هستند. در کنار صنعت، کشاورزی نیز در این استان توسعه یافته و تولیدات متنوعی از محصولات کشاورزی از جمله گندم، زعفران، سیب و انگور در این منطقه صورت می‌گیرد.\nاز نظر فرهنگی نیز، استان آذربایجان شرقی دارای تاریخ و فرهنگی بسیار غنی است. مردم این استان به زبان ترکی آذری صحبت می‌کنند و همچنین به سنت‌ها، موسیقی، و هنرهای محلی خود پایبندند. هر ساله در این استان جشنواره‌ها، نمایشگاه‌ها و فعالیت‌های فرهنگی مختلفی برگزار می‌شود که به ترویج فرهنگ و هنر این منطقه کمک می‌کند."</string>
@@ -163,7 +180,424 @@
     <string name="naeen">نایین</string>
     <string name="najafabad">نجف‌آباد</string>
     <string name="natanz">نطنز</string>
-    <string name="next">بعدی</string>
-    <string name="close">بستن</string>
+
+    <!-- البرز -->
+    <string name="eshtehard">اشتهارد</string>
+    <string name="charbagh">چهارباغ</string>
+    <string name="savojbolagh">ساوجبلاغ</string>
+    <string name="taleqan">طالقان</string>
+    <string name="fardis">فردیس</string>
+    <string name="karaj">کرج</string>
+    <string name="nazarabad">نظرآباد</string>
+
+    <!-- البرز -->
+    <string name="abdanan">آبدانان</string>
+    <string name="eyvan">ایوان</string>
+    <string name="badreh">بدره</string>
+    <string name="chardavol">چرداول</string>
+    <string name="chovar">چوار</string>
+    <string name="darreh_shahr">دره شهر</string>
+    <string name="dehloran">دهلران</string>
+    <string name="sirvan">سیروان</string>
+    <string name="malekshahi">ملکشاهی</string>
+    <string name="mehran">مهران</string>
+    <string name="holeylan">هلیلان</string>
+
+    <!-- بوشهر -->
+    <string name="tangestan">تنگستان</string>
+    <string name="jam">جم</string>
+    <string name="dashtestan">دشتستان</string>
+    <string name="dashti">دشتی</string>
+    <string name="dayyer">دیر</string>
+    <string name="deylam">دیلم</string>
+    <string name="asaluyeh">عسلویه</string>
+    <string name="kangan">کنگان</string>
+    <string name="ganaveh">گناوه</string>
+
+    <!-- تهران -->
+    <string name="eslamShahr">اسلام شهر</string>
+    <string name="baharestan">بهارستان</string>
+    <string name="pakdasht">پاکدشت</string>
+    <string name="pardis">پردیس</string>
+    <string name="pishva">" پیشوا"</string>
+    <string name="damavand">دماوند</string>
+    <string name="robat_karim">رباط کریم</string>
+    <string name="rey">ری</string>
+    <string name="shemiranat">شمیرانات</string>
+    <string name="shahriar">شهریار</string>
+    <string name="firuzkuh">فیروزکوه</string>
+    <string name="qods">قدس</string>
+    <string name="qarchak">قرچک</string>
+    <string name="malard">ملارد</string>
+    <string name="varamin">ورامین</string>
+
+    <!-- چهارمحال بختیاری -->
+    <string name="ardal">اردل</string>
+    <string name="borujen">بروجن</string>
+    <string name="ben">بن</string>
+    <string name="khanmirza">خانمیرزا</string>
+    <string name="saman">سامان</string>
+    <string name="shahrekord">شهرکرد</string>
+    <string name="farsan">فارسان</string>
+    <string name="farokhshahr">فرخشهر</string>
+    <string name="falard">فلارد</string>
+    <string name="kuhrang">کوهرنگ</string>
+    <string name="kiar">کیار</string>
+    <string name="lordegan">لردگان</string>
+
+    <!-- خراسان جنوبی -->
+    <string name="boshruyeh">بشرویه</string>
+    <string name="birjand">بیرجند</string>
+    <string name="khosf">خوسف</string>
+    <string name="darmian">درمیان</string>
+    <string name="zirkuh">زیرکوه</string>
+    <string name="sarayan">سرایان</string>
+    <string name="sarbisheh">سربیشه</string>
+    <string name="tabas">طبس</string>
+    <string name="ferdows">فردوس</string>
+    <string name="qaen">قائنات</string>
+    <string name="nehbandan">نهبندان</string>
+
+    <!-- خراسان رضوی -->
+    <string name="bakharz">باخرز</string>
+    <string name="bajestan">بجستان</string>
+    <string name="bardaskan">بردسکن</string>
+    <string name="taybad">تایباد</string>
+    <string name="torbat_e_jam">تربت جام</string>
+    <string name="torbat_e_heydariyeh">تربت حیدریه</string>
+    <string name="joghatay">جفتای</string>
+    <string name="joveyn">جوین</string>
+    <string name="chenaran">چناران</string>
+    <string name="khalil_abad">خلیل آباد</string>
+    <string name="khaf">خواف</string>
+    <string name="khoshab">خوشاب</string>
+    <string name="davarzan">داورزن</string>
+    <string name="dargaz">درگز</string>
+    <string name="roshtkhar">رشتخوار</string>
+    <string name="zaveh">زاوه</string>
+    <string name="zeberkhan">زبرخان</string>
+    <string name="sabzevar">سبزوار</string>
+    <string name="sarakhs">سرخس</string>
+    <string name="sheshtamad">ششتمد</string>
+    <string name="salehabad">صالح آباد</string>
+    <string name="torghabe_shandiz">طرقبه شاندیز</string>
+    <string name="fariman">فریمان</string>
+    <string name="firuzeh">فیروزه</string>
+    <string name="quchan">قوچان</string>
+    <string name="kashmar">کاشمر</string>
+    <string name="kalat">کلات</string>
+    <string name="kuhsorkh">کوهسرخ</string>
+    <string name="golbahar">گلبهار</string>
+    <string name="gonabad">گناباد</string>
+    <string name="mashhad">مشهد</string>
+    <string name="mahvelat">مه ولات</string>
+    <string name="miyan_jolgeh">میان جلگه</string>
+    <string name="neyshabur">نیشابور</string>
+
+    <!-- خراسان شمالی -->
+    <string name="esfarayen">اسفراین</string>
+    <string name="bojnurd">بجنورد</string>
+    <string name="jajarm">جاجرم</string>
+    <string name="raz_and_jargalan">راز و جرگلان</string>
+    <string name="shirvan">شیروان</string>
+    <string name="faruj">فاروج</string>
+    <string name="garmeh">گرمه</string>
+    <string name="maneh_and_samalqan">سملقان و مانه</string>
+
+    <!--  حوزستان  -->
+    <string name="abadan">آبادان</string>
+    <string name="omidiyeh">امیدیه</string>
+    <string name="andika">اندیکا</string>
+    <string name="andimeshk">اندیمشک</string>
+    <string name="ahvaz">اهواز</string>
+    <string name="izeh">ایذه</string>
+    <string name="baghmalek">باغ ملک</string>
+    <string name="bavi">باوی</string>
+    <string name="behbahan">بهبهان</string>
+    <string name="khorramshahr">خرمشهر</string>
+    <string name="dezpart">دزپارت</string>
+    <string name="dezful">دزفول</string>
+    <string name="dasht_e_azadegan">دشت آزدگان</string>
+    <string name="ramshir">رامشیر</string>
+    <string name="ramhormoz">رامهرمز</string>
+    <string name="shadegan">شادگان</string>
+    <string name="shush">شوش</string>
+    <string name="shushtar">شوشتر</string>
+    <string name="gotvand">گتوند</string>
+    <string name="lally">لالی</string>
+    <string name="mahshahr">ماهشهر</string>
+    <string name="masjed_soleyman">مسجد سلیمان</string>
+    <string name="haftgel">هفتگل</string>
+    <string name="hendijan">هندیجان</string>
+    <string name="hoveyzeh">هویزه</string>
+
+    <!--  زنجان  -->
+    <string name="abhar">ابهر</string>
+    <string name="ijrud">ایجرود</string>
+    <string name="khodabandeh">خدابنده</string>
+    <string name="khorramdarreh">خرمدره</string>
+    <string name="soltaniyeh">سلطانیه</string>
+    <string name="tarom">طارم</string>
+    <string name="mahneshan">ماهنشان</string>
+
+    <!--  سمنان  -->
+    <string name="ardan">آردان</string>
+    <string name="damghan">دامغان</string>
+    <string name="sorkheh">سرخه</string>
+    <string name="shahrood">شاهرود</string>
+    <string name="garmsar">گرمسار</string>
+    <string name="mehdishahr">مهدی شهر</string>
+    <string name="maime">میامی</string>
+
+
+    <!--  سیستان و بلوچستان  -->
+    <string name="iranshahr">ایرانشهر</string>
+    <string name="bampur">بمبور</string>
+    <string name="taftan">تفتان</string>
+    <string name="chah_bahar">چابهار</string>
+    <string name="khash">خاش</string>
+    <string name="dashtiari">دشتیاری</string>
+    <string name="dalgan">دلگان</string>
+    <string name="rask">راسک</string>
+    <string name="zabol">زابل</string>
+    <string name="zahedan">زاهدان</string>
+    <string name="zarabad">زرآباد</string>
+    <string name="zahak">زهک</string>
+    <string name="sarbaz">سرباز</string>
+    <string name="sib_and_suran">سیب و سوران</string>
+    <string name="fanuj">فنوج</string>
+    <string name="qasreqand">قصرقند</string>
+    <string name="konarak">کنارک</string>
+    <string name="golshan">گلشن</string>
+    <string name="lashar">لاشار</string>
+    <string name="mehrestan">مهرستان</string>
+    <string name="mirjaveh">میرجاوه</string>
+    <string name="nikshahr">نیک شهر</string>
+    <string name="nimruz">نیمروز</string>
+    <string name="hamoun">هامون</string>
+    <string name="hirmand">هیرمند</string>
+
+    <!--  فارس  -->
+    <string name="abade">آباده</string>
+    <string name="arsenjan">ارسنجان</string>
+    <string name="estahban">استهبان</string>
+    <string name="eqlid">اقلید</string>
+    <string name="evaz">اوز</string>
+    <string name="bakhtegan">بختگان</string>
+    <string name="bavanat">بوانات</string>
+    <string name="beyza">بیضا</string>
+    <string name="pasargad">پاسارگاد</string>
+    <string name="joyom">جویم</string>
+    <string name="jahrom">جهرم</string>
+    <string name="kharameh">خرامه</string>
+    <string name="khorrambid">خرم بید</string>
+    <string name="khafr">خفر</string>
+    <string name="darab">داراب</string>
+    <string name="rostam">رستم</string>
+    <string name="zarqan">زرقان</string>
+    <string name="zarrin_dasht">زرین دشت</string>
+    <string name="sepidan">سپیدان</string>
+    <string name="sarchehan">سرچهان</string>
+    <string name="sarvestan">سروستان</string>
+    <string name="shiraz">شیراز</string>
+    <string name="farashband">فراشبند</string>
+    <string name="fasa">فسا</string>
+    <string name="firuzabad">فیروزآباد</string>
+    <string name="qir_and_karzin">قیر و کارزین</string>
+    <string name="kazerun">کازرون</string>
+    <string name="kavar">"کوار"</string>
+    <string name="kuhchenar">کوه چنار</string>
+    <string name="gerash">گراش</string>
+    <string name="larestan">لارستان</string>
+    <string name="lamerd">لامرد</string>
+    <string name="marvdasht">مرودشت</string>
+    <string name="mamasani">ممسنی</string>
+    <string name="mohr">مهر</string>
+    <string name="neyriz">نی ریز</string>
+
+
+    <!--  قزوین  -->
+    <string name="abeyk">آبیک</string>
+    <string name="avaj">آوج</string>
+    <string name="bueenzahra">بوئین زهرا</string>
+    <string name="takestan">تاکستان</string>
+
+    <!--  قم  -->
+    <string name="jafariyeh">جعفریه</string>
+    <string name="kahak">کهک</string>
+
+    <!--  کردستان  -->
+    <string name="baneh">بانه</string>
+    <string name="bijar">بیجار</string>
+    <string name="dehgolan">دهگلان</string>
+    <string name="divandarreh">دیواندره</string>
+    <string name="sarvabad">سروآباد</string>
+    <string name="qorveh">قروه</string>
+    <string name="kamyaran">کامیاران</string>
+    <string name="marivan">مریوان</string>
+
+    <!--  کرمان  -->
+    <string name="orzueeyeh">آرزوئیه</string>
+    <string name="anar">انار</string>
+    <string name="baft">بافت</string>
+    <string name="bardsir">بردسیر</string>
+    <string name="bam">بم</string>
+    <string name="jaz_murian">جازموریان</string>
+    <string name="jiroft">جیرفت</string>
+    <string name="rabor">رابر</string>
+    <string name="rafsanjan">رفسنجان</string>
+    <string name="rudbar_jonubi">رودبار جنوب</string>
+    <string name="rigan">ریگان</string>
+    <string name="zarand">زرند</string>
+    <string name="sirjan">سیرجان</string>
+    <string name="shahr_babak">شهربابک</string>
+    <string name="anbarabad">عنبرآباد</string>
+    <string name="faryab">فریاب</string>
+    <string name="fahraj">فهرج</string>
+    <string name="qalehganj">قلغه گنج</string>
+    <string name="kuhbanan">کوه بنان</string>
+    <string name="kahnuj">کهنوج</string>
+    <string name="ganbaki">گنبکی</string>
+    <string name="manujan">منوجان</string>
+    <string name="narmashir">نرماشیر</string>
+
+    <!--  کرمانشاه  -->
+    <string name="eslamabad_gharb">اسلام آباد غرب</string>
+    <string name="paveh">پاوه</string>
+    <string name="salas_babajani">ثلاث باباجانی</string>
+    <string name="javanrud">جوان رود</string>
+    <string name="dalahu">دالاهو</string>
+    <string name="ravansar">روانسر</string>
+    <string name="sarpol_zahab">سرپل ذهاب</string>
+    <string name="sonqor">سنقر و کلیایی</string>
+    <string name="sahneh">صحنه</string>
+    <string name="gasr_shirin">قصر شیرین</string>
+    <string name="kangavar">کنگاور</string>
+    <string name="gilanegharb">گیلانغرب</string>
+    <string name="harsin">هرسین</string>
+
+    <!--  کهگلویه و بویراحمد  -->
+    <string name="basht">باشت</string>
+    <string name="boyer_ahmad">بویراحمد</string>
+    <string name="bahmai">بهمئی</string>
+    <string name="choram">چرام</string>
+    <string name="dena">دنا</string>
+    <string name="kohgiluyeh">کهگیلویه</string>
+    <string name="gachsaran">گچساران</string>
+    <string name="landeh">لنده</string>
+    <string name="maregoon">مارگون</string>
+
+    <!--  گلستان  -->
+    <string name="azadshahr">آزادشهر</string>
+    <string name="aqqala">آق قلا</string>
+    <string name="bandar_gaz">بندر قز</string>
+    <string name="torkaman">ترکمن</string>
+    <string name="ramiyan">رامیان</string>
+    <string name="ali_abad">علی آباد</string>
+    <string name="kordkuy">کردکوی</string>
+    <string name="kalaleh">کلاله</string>
+    <string name="galikesh">گالیکش</string>
+    <string name="gorgan">گرگان</string>
+    <string name="gomishan">گمیشان</string>
+    <string name="gonbad_kavus">گنبدکاووس</string>
+    <string name="marave_tappeh">مراوه تپه </string>
+    <string name="minodasht">مینودشت</string>
+
+    <!--  گیلان  -->
+    <string name="astara">آستارا</string>
+    <string name="astaneh_ashrafiyeh">آستان اشرفیه</string>
+    <string name="amlash">املش</string>
+    <string name="bandar_anzali">بندر انزلی</string>
+    <string name="talesh">تالش</string>
+    <string name="khomam">خمام</string>
+    <string name="rasht">رشت</string>
+    <string name="rezvanshahr">رضوان شهر</string>
+    <string name="rudbar">رودبار</string>
+    <string name="rudsar">رودسر</string>
+    <string name="siahkal">سیاه کل</string>
+    <string name="shaft">شفت</string>
+    <string name="someh_sara">صومعه سرا</string>
+    <string name="fuman">فومن</string>
+    <string name="lahijan">لاهیجان</string>
+    <string name="langarud">لنگرود</string>
+    <string name="masal">ماسال</string>
+
+    <!--  لرستان  -->
+    <string name="azna">ازنا</string>
+    <string name="aligudarz">الیگودرز</string>
+    <string name="borujerd">بروجرد</string>
+    <string name="poldokhtar">پلدختر</string>
+    <string name="chegani">چگنی</string>
+    <string name="khorram_abad">خرم آباد</string>
+    <string name="delfan">دلفان</string>
+    <string name="dorud">دورود</string>
+    <string name="rumeshkan">رومشکان</string>
+    <string name="selseleh">سلسله</string>
+    <string name="kuhdasht">کوهدشت</string>
+
+    <!--  مازندران  -->
+    <string name="amol">آمل</string>
+    <string name="babol">بابل</string>
+    <string name="babolsar">بابلسر</string>
+    <string name="behshahr">بهشهر</string>
+    <string name="tonekabon">تنکابن</string>
+    <string name="juybar">جویبار</string>
+    <string name="chalus">چالوس</string>
+    <string name="ramsar">رامسر</string>
+    <string name="sari">ساری</string>
+    <string name="savad_kuh">سوادکوه</string>
+    <string name="north_savad_kuh">سواد کوه شمالی</string>
+    <string name="simurgh">سیمرغ</string>
+    <string name="abbasabad">عباس آباد</string>
+    <string name="fereydunkenar">فریدون کنار</string>
+    <string name="qaem_shahr">قائم شهر</string>
+    <string name="kelardasht">کلاردشت</string>
+    <string name="galugah">گلوگاه</string>
+    <string name="mahmudabad">محمودآباد</string>
+    <string name="miandorud">میاندورود</string>
+    <string name="neka">نکا</string>
+    <string name="nour">نور</string>
+    <string name="nowshahr">نوشهر</string>
+
+    <!--  مرکزی  -->
+    <string name="ashtiyan">آشتیان</string>
+    <string name="arak">اراک</string>
+    <string name="tafresh">تفریش</string>
+    <string name="khomeyn">خمین</string>
+    <string name="khondab">خنداب</string>
+    <string name="delijan">دلیجان</string>
+    <string name="zarandieh">زرندیه</string>
+    <string name="saveh">ساوه</string>
+    <string name="shazand">شازند</string>
+    <string name="farahan">فراهان</string>
+    <string name="komijan">کمیجان</string>
+    <string name="mahallat">محلات</string>
+
+    <!--  هرمزگان  -->
+    <string name="abu_musa">اوموسی</string>
+    <string name="bastak">بستک</string>
+    <string name="bashagard">بشاگرد</string>
+    <string name="bandar_lngeh">بندرلنگه</string>
+    <string name="bandar_abbas">بندرعباس</string>
+    <string name="parsiyan">پارسیان</string>
+    <string name="jask">جاسک</string>
+    <string name="hajiabad">حاجی آباد</string>
+    <string name="khamir">خمیر</string>
+    <string name="rudan">رودان</string>
+    <string name="sirik">سیریک</string>
+    <string name="qeshm">قشم</string>
+    <string name="minab">میناب</string>
+
+    <!--  همدان  -->
+    <string name="asadabad">اسدآباد</string>
+    <string name="bahar">بهار</string>
+    <string name="tuyserkan">تویسرکان</string>
+    <string name="darjazin">درگزین</string>
+    <string name="razan">رزن</string>
+    <string name="famenin">فامنین</string>
+    <string name="kabudarahang">کبوترآهنگ</string>
+    <string name="malayer">ملایر</string>
+    <string name="nahavand">نهاوند</string>
+
 
 </resources>
