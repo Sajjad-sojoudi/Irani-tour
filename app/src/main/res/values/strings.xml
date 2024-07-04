@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Irani Tour</string>
+    <string name="app_name" translatable="false">Irani Tour</string>
     <string name="app_shoar" translatable="false">Irani Tour is your good companion :)</string>
     <string name="saved_locations" translatable="false">Saved locations</string>
     <string name="about_us" translatable="false">About us</string>
@@ -613,4 +613,8 @@
     <string name="marvast" translatable="false">Marvast</string>
     <string name="mehriz" translatable="false">Mehriz</string>
     <string name="meybod" translatable="false">Meybod</string>
+
+    <!--  East Azarbaijan Lm  -->
+
+
 </resources>

@@ -16,7 +16,6 @@ import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.activity.MainActivity
 import ir.sajjad.iranitour.databinding.DialogEditProfileBinding
 import ir.sajjad.iranitour.databinding.FragmentProfileBinding
-import ir.sajjad.iranitour.interfaces.ItemBtn
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
