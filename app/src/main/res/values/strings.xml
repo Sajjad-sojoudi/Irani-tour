@@ -601,4 +601,16 @@
     <string name="nahavand" translatable="false">Nahavand</string>
 
 
+    <!--  yazd  -->
+    <string name="abarkuh" translatable="false">Abarkuh</string>
+    <string name="ardakan" translatable="false">Ardakan</string>
+    <string name="ashkezar" translatable="false">Ashkezar</string>
+    <string name="bafg" translatable="false">Bafg</string>
+    <string name="behabad" translatable="false">Behabad</string>
+    <string name="taft" translatable="false">Taft</string>
+    <string name="harat" translatable="false">Harat</string>
+    <string name="zarach" translatable="false">Zarach</string>
+    <string name="marvast" translatable="false">Marvast</string>
+    <string name="mehriz" translatable="false">Mehriz</string>
+    <string name="meybod" translatable="false">Meybod</string>
 </resources>

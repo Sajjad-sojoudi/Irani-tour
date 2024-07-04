@@ -600,4 +600,19 @@
     <string name="nahavand">نهاوند</string>
 
 
+    <!--  یزد  -->
+    <string name="abarkuh">ابرکوه</string>
+    <string name="ardakan">اردکان</string>
+    <string name="ashkezar">اشکذر</string>
+    <string name="bafg">بافق</string>
+    <string name="behabad">بهاباد</string>
+    <string name="taft">تفت</string>
+    <string name="zarach">زارچ</string>
+    <string name="marvast">مروست</string>
+    <string name="mehriz">مهریز</string>
+    <string name="meybod">میبد</string>
+    <string name="harat">هرات</string>
+
+
+
 </resources>
