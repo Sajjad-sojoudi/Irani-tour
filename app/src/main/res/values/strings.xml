@@ -27,6 +27,18 @@
     <string name="fill_value" translatable="false">Please fill in all the values</string>
     <string name="enter_password" translatable="false">Please enter password</string>
 
+    <!--  About Us  -->
+    <string name="introduction" translatable="false">Introduction</string>
+    <string name="introduction_details" translatable="false">The Iran Tourism app is designed and developed with the aim of introducing the culture, history, and tourist attractions of Iran. This app seeks to showcase the beauty and charm of Iran to both Iranian and international users.</string>
+    <string name="our_mission" translatable="false">Our Mission</string>
+    <string name="our_mission_details" translatable="false">Our mission is to enhance users\' awareness and knowledge about the history, culture, and tourist attractions of Iran. We strive to encourage users to travel and visit Iran\'s beautiful sites by providing accurate and engaging content.</string>
+    <string name="our_team" translatable="false">Our Team</string>
+    <string name="our_team_details" translatable="false">All team roles, including programming, designing, and writing, are carried out by Sajjad Sajoudi.</string>
+    <string name="our_services" translatable="false">Our Services</string>
+    <string name="our_services_details" translatable="false">We are always ready to hear your opinions, suggestions, and criticisms. You can contact us through the following ways:  Email: sajad.soojoodi@gmail.com</string>
+    <string name="our_vision" translatable="false">Our Vision</string>
+    <string name="our_vision_details" translatable="false">Our vision is to become the main and reliable source of tourism and cultural information about Iran in the world. With continuous updates and adding new content, we always strive to meet the satisfaction of our dear users.</string>
+
 
     <!-- Ostan name -->
     <string name="east_azarbaijan" translatable="false">East Azarbaijan</string>
@@ -615,6 +627,17 @@
     <string name="meybod" translatable="false">Meybod</string>
 
     <!--  East Azarbaijan Lm  -->
+    <string name="kandovan" translatable="false">Kandovan</string>
+    <string name="el_goli" translatable="false">El_Goli</string>
+    <string name="arsbaran_forests" translatable="false">Arsbaran forests</string>
+    <string name="municipality_palace_of_Tabriz" translatable="false">Municipality Palace of Tabriz</string>
+    <string name="rab_rashidi" translatable="false">Rab Rashidi</string>
+    <string name="blue_mosque" translatable="false">Blue Mosque</string>
+    <string name="ahar_jame_mosque" translatable="false">Ahar Jame Mosque</string>
+    <string name="maqbaratoshoara" translatable="false">Maqbaratoshoara</string>
+    <string name="zahhak_castle" translatable="false">Zahhak Castle</string>
+
+
 
 
 </resources>

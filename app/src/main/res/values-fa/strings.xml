@@ -27,6 +27,18 @@
     <string name="fill_value">لطفا همه مقادیر رو پر کنید</string>
     <string name="enter_password">لطفا رمز عبور را وارد کنید</string>
 
+    <!--  درباره ما   -->
+    <string name="introduction">"معرفی اپلیکیشن "</string>
+    <string name="introduction_details">"اپلیکیشن ایران شناسی به هدف معرفی فرهنگ، تاریخ و مکان‌های دیدنی ایران طراحی و توسعه داده شده است. این اپلیکیشن قصد دارد تا زیبایی‌ها و جذابیت‌های سرزمین پهناور ایران را به کاربران ایرانی و خارجی معرفی کند.  "</string>
+    <string name="our_mission">"مأموریت ما "</string>
+    <string name="our_mission_details">"ماموریت ما افزایش آگاهی و اطلاعات کاربران درباره تاریخ، فرهنگ و جاذبه‌های گردشگری ایران است. ما تلاش می‌کنیم تا با ارائه محتوای دقیق و جذاب، کاربران را به سفر و بازدید از مکان‌های دیدنی ایران تشویق کنیم.  "</string>
+    <string name="our_team">تیم ما</string>
+    <string name="our_team_details">"تمامی نقش‌های تیم از جمله برنامه‌نویسی، طراحی و نویسندگی توسط سجاد سجودی انجام شده است.  "</string>
+    <string name="our_services">خدمات ما</string>
+    <string name="our_services_details">ما همیشه آماده شنیدن نظرات، پیشنهادات و انتقادات شما هستیم. برای ارتباط با ما می‌توانید از طریق راه‌های زیر با ما در تماس باشید:  ایمیل: sajad.soojoodi@gmail.com</string>
+    <string name="our_vision">چشم انداز</string>
+    <string name="our_vision_details">"چشم‌انداز ما تبدیل شدن به منبع اصلی و معتبر اطلاعات گردشگری و فرهنگی ایران در جهان است. ما با آپدیت‌های مداوم و افزودن محتوای جدید، همواره در تلاشیم تا رضایت شما کاربران عزیز را جلب کنیم.  "</string>
+
 
     <!-- اسم استان -->
     <string name="east_azarbaijan" translatable="false">اذربایجان شرقی</string>
@@ -614,7 +626,15 @@
     <string name="harat">هرات</string>
 
     <!--  مکان دیدنی آذربایجان شرقی  -->
-
+    <string name="kandovan">کندوان</string>
+    <string name="el_goli">ائل گلی(شاهگولی)</string>
+    <string name="arsbaran_forests">جنگال های ارسباران</string>
+    <string name="municipality_palace_of_Tabriz">کاخ شهرداری تبریز</string>
+    <string name="rab_rashidi">ربع رشیدی</string>
+    <string name="blue_mosque">مسجد کبود</string>
+    <string name="ahar_jame_mosque">مسجد جامع اهر</string>
+    <string name="maqbaratoshoara">مقبره الشعرا</string>
+    <string name="zahhak_castle">فلعه ضحاک</string>
 
 
 

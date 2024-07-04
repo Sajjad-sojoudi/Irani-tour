@@ -1,30 +1,23 @@
 package ir.sajjad.iranitour.activity
 
 import android.content.Context
-import android.content.Intent
-import android.content.res.Configuration
-import android.content.res.Resources
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.text.Layout
-import android.view.View
-import android.view.ViewGroup
+import android.view.MenuItem
 import android.widget.Switch
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.view.GravityCompat
-import androidx.fragment.app.FragmentContainerView
 import androidx.navigation.findNavController
-import com.google.android.material.materialswitch.MaterialSwitch
+import com.google.android.material.navigation.NavigationView
 import ir.sajjad.iranitour.R
 import ir.sajjad.iranitour.databinding.ActivityMainBinding
-import java.util.Locale
 
 var isRegistered = false
+
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-
-
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +25,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolBarMain)
-        val sharedPreferencesFileName = "data"
-        val sharedPreferences = getSharedPreferences(sharedPreferencesFileName, Context.MODE_PRIVATE)
-        isRegistered = sharedPreferences.getBoolean("isRegistered", false)
+        sharedPreferences = getSharedPreferences("ThemePref", Context.MODE_PRIVATE)
+
+        // Set the theme based on SharedPreferences
+        if (sharedPreferences.getBoolean("isDarkMode", false)) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(
             this,
@@ -43,42 +41,31 @@ class MainActivity : AppCompatActivity() {
             R.string.open_drawer,
             R.string.close_drawer
         )
-
         binding.drawerLayoutMain.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
-        binding.navigationViewMain.setNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.menu_save_locations -> {
-                    findNavController(R.id.fragmentContainerView).navigate(R.id.savedLocationFragment)
-                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
-                }
 
-                R.id.menu_setting -> {
-                    findNavController(R.id.fragmentContainerView).navigate(R.id.settingFragment)
-                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
-                }
-
-                R.id.menu_about_us -> {
-                    findNavController(R.id.fragmentContainerView).navigate(R.id.aboutUsFragment)
-                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
-                }
-
-                R.id.menu_change_theme -> {
-                    val switch =findViewById<MaterialSwitch>(R.id.change_theme)
-                    switch.setOnCheckedChangeListener { _, isChecked ->
-                        if (isChecked){
-
-                        }else{
-                        }
-                    }
-                }
-
-                R.id.menu_exit -> {
-                   finishAffinity()
-                }
-            }
+        binding.navigationViewMain.setNavigationItemSelectedListener { menuItem ->
+            handleNavigationItemSelected(menuItem)
             true
         }
+
+        // Initialize the theme switch
+        val headerView = binding.navigationViewMain.getHeaderView(0)
+        val themeSwitch = headerView.findViewById<Switch>(R.id.change_theme)
+        themeSwitch.isChecked = sharedPreferences.getBoolean("isDarkMode", false)
+        themeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                sharedPreferences.edit().putBoolean("isDarkMode", true).apply()
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                sharedPreferences.edit().putBoolean("isDarkMode", false).apply()
+            }
+        }
+
+        val sharedPreferencesFileName = "data"
+        val userPreferences = getSharedPreferences(sharedPreferencesFileName, Context.MODE_PRIVATE)
+        isRegistered = userPreferences.getBoolean("isRegistered", false)
 
         binding.bottomNavigationMain.setOnItemSelectedListener {
             when (it.itemId) {
@@ -91,24 +78,36 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.menu_profile -> {
-                    if(!isRegistered){
+                    if (!isRegistered) {
                         findNavController(R.id.fragmentContainerView).navigate(R.id.registerFragment)
-                        sharedPreferences.edit().putBoolean("isRegistered",true).apply()
-                        //isRegistered = true
-                    }else{
+                        userPreferences.edit().putBoolean("isRegistered", true).apply()
+                        isRegistered = true
+                    } else {
                         findNavController(R.id.fragmentContainerView).navigate(R.id.profileFragment)
-                           isRegistered = true
                     }
                 }
             }
             true
         }
-
     }
 
-
-
-
-
-
+    private fun handleNavigationItemSelected(menuItem: MenuItem) {
+        when (menuItem.itemId) {
+            R.id.menu_save_locations -> {
+                findNavController(R.id.fragmentContainerView).navigate(R.id.savedLocationFragment)
+                binding.drawerLayoutMain.closeDrawers()
+            }
+            R.id.menu_setting -> {
+                findNavController(R.id.fragmentContainerView).navigate(R.id.settingFragment)
+                binding.drawerLayoutMain.closeDrawers()
+            }
+            R.id.menu_about_us -> {
+                findNavController(R.id.fragmentContainerView).navigate(R.id.aboutUsFragment)
+                binding.drawerLayoutMain.closeDrawers()
+            }
+            R.id.menu_exit -> {
+                finishAffinity()
+            }
+        }
+    }
 }

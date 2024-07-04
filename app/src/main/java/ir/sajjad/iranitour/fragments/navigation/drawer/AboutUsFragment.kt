@@ -13,4 +13,8 @@ class AboutUsFragment : Fragment() {
         binding  = FragmentAboutUsBinding.inflate(layoutInflater)
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 }
