@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(
+
             this,
             binding.drawerLayoutMain,
             binding.toolBarMain,
